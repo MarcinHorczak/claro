@@ -43,11 +43,11 @@ jobs:
       - name: List build directory
         run: ls -la .next
       - name: List output directory
-        run: ls -la ./out
+        run: ls -la .out
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: .out
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
