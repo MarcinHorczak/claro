@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Header } from "@/shared/components";
 import "../../public/globals.css";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = localFont({
   src: "../../public/fonts/GeistVF.woff",
@@ -20,24 +22,31 @@ export const metadata: Metadata = {
   description: "Claro",
 };
 
-const RootLayout = ({
+const RootLayout = async ({
   children,
 }: Readonly<{
   children: ReactNode;
-}>) => (
-  <html lang="en">
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
-    >
-      <div className="flex flex-col h-full">
-        <Header />
-        <div className="flex-1">{children}</div>
-        <footer className="flex justify-center content-center bg-slate-100">
-          <div className="p-5">Footer</div>
-        </footer>
-      </div>
-    </body>
-  </html>
-);
+}>) => {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
+  return (
+    <html lang={locale}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
+      >
+        <NextIntlClientProvider messages={messages}>
+          <div className="flex flex-col h-full">
+            <Header />
+            <div className="flex-1 p-10">{children}</div>
+            <footer className="flex justify-center content-center bg-slate-100">
+              <div className="p-5">Footer</div>
+            </footer>
+          </div>
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+};
 
 export default RootLayout;

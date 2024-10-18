@@ -1,25 +1,28 @@
 import { Paths } from "@/shared/paths";
+import { useTranslations } from "next-intl";
 
 export const useNavigationElements = () => {
+  const t = useTranslations();
+
   return [
     {
-      name: "Home",
+      name: t("navigation.home"),
       href: Paths.Home,
     },
     {
-      name: "About",
+      name: t("navigation.about"),
       href: Paths.About,
     },
     {
-      name: "Offers",
+      name: t("navigation.offers"),
       href: Paths.Offers,
     },
     {
-      name: "Prices",
+      name: t("navigation.prices"),
       href: Paths.Prices,
     },
     {
-      name: "Contact",
+      name: t("navigation.contact"),
       href: Paths.Contact,
     },
   ];
