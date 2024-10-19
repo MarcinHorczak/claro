@@ -5,7 +5,7 @@ export const Navigation = () => {
   const navigationElements = useNavigationElements();
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 flex-wrap">
       {navigationElements.map((navigationElementProps, index) => (
         <NavigationElement key={index} {...navigationElementProps} />
       ))}
