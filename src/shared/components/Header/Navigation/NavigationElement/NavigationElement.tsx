@@ -6,7 +6,9 @@ interface NavigationElementProps {
 }
 
 export const NavigationElement = ({ href, name }: NavigationElementProps) => (
-  <Link href={href}>
-    <div className="px-10 py-5 border">{name}</div>
-  </Link>
+  <div className="border w-full lg:w-auto">
+    <Link href={href}>
+      <div className="px-10 py-5">{name}</div>
+    </Link>
+  </div>
 );

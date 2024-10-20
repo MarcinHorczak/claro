@@ -1,21 +1,9 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Header } from "@/shared/components";
 import "../../public/globals.css";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-
-const geistSans = localFont({
-  src: "../../public/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../../public/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Claro",
@@ -32,9 +20,7 @@ const RootLayout = async ({
 
   return (
     <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
-      >
+      <body className="antialiased h-screen w-full inline-block box-border text-black bg-white">
         <NextIntlClientProvider messages={messages}>
           <div className="flex flex-col h-full">
             <Header />
