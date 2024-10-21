@@ -12,8 +12,8 @@
     "^react$",
     "react",
     "<THIRD_PARTY_MODULES>",
-    "@/app",
-    "@/shared",
+    "@app",
+    "@shared",
     "^[./](?!.+\\.(\\w){1})",
     "^[./].+\\.(\\w){1}"
   ],

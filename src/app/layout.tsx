@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { Header } from "@/shared/components";
+import { Header } from "@shared/components";
 import "../../public/globals.css";
 
 export const metadata: Metadata = {
