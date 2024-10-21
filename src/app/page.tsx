@@ -47,7 +47,7 @@ const Home = () => {
       <p className="p-20 text-center">{t("home.shortDescription")}</p>
       <div>
         <HomeSection
-          imagePath="/home/bible.jpg"
+          imagePath="/home/bible.webp"
           imageAlt="Bible"
           textContent={
             <>
@@ -60,7 +60,7 @@ const Home = () => {
           }
         />
         <HomeSection
-          imagePath="/home/active.jpg"
+          imagePath="/home/active.webp"
           imageAlt="Active"
           textContent={
             <>
@@ -74,7 +74,7 @@ const Home = () => {
           direction="left"
         />
         <HomeSection
-          imagePath="/home/hands.jpg"
+          imagePath="/home/hands.webp"
           imageAlt="Hands"
           textContent={
             <>
