@@ -3,8 +3,10 @@ import { Navigation } from "./Navigation";
 
 export const Header = () => (
   <div className="flex flex-wrap content-center justify-center gap-10 p-10">
-    <div>
-      <Image src="/logo.png" alt="Logo" width={60} height={56} priority />
+    <div className="bg-primary flex h-20 w-20 items-center justify-center rounded-full">
+      <div>
+        <Image src="/logo.png" alt="Logo" priority height={40} width={40} />
+      </div>
     </div>
     <Navigation />
   </div>

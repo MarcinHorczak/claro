@@ -6,9 +6,9 @@ interface NavigationElementProps {
 }
 
 export const NavigationElement = ({ href, name }: NavigationElementProps) => (
-  <div className="w-full border lg:w-auto">
+  <div className="w-full rounded-lg border lg:w-auto">
     <Link href={href}>
-      <div className="px-10 py-5">{name}</div>
+      <div className="flex h-full items-center px-10 py-5">{name}</div>
     </Link>
   </div>
 );

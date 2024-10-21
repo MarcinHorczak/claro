@@ -24,7 +24,7 @@ const RootLayout = async ({
         <NextIntlClientProvider messages={messages}>
           <div className="flex h-full flex-col">
             <Header />
-            <div className="flex-1 p-10">{children}</div>
+            <div className="flex-1">{children}</div>
             <footer className="flex content-center justify-center bg-slate-100">
               <div className="p-5">Footer</div>
             </footer>

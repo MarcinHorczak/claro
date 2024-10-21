@@ -5,5 +5,28 @@
     "offers": "Oferta",
     "prices": "Cennik",
     "contact": "Kontakt"
+  },
+  "home": {
+    "shortDescription": "CLARO - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.",
+    "c": {
+      "title": "Chrześcijańskie",
+      "description": "W swojej pracy opieramy się na chrześcijańskiej wizji człowieka. Bazujemy na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy."
+    },
+    "l": {
+      "title": "Laboratorium",
+      "description": "W warunkach pełnego zaufania i poczucia bezpieczeństwa chcemy pochylać się z troską nad każdą osobą. Towarzyszymy w procesie prób i błędów. Tworzymy narzędzia, by wydobywać, badać, rozeznawać a później pielęgnować i troszczyć się o wzrost tego, co najbardziej życiodajne."
+    },
+    "a": {
+      "title": "Aktywnego",
+      "description": "Tworzymy przestrzeń zaangażowania, która wprowadza w dynamiczny proces zmiany. Formy warsztatowe sprzyjają wyjściu z bierności i impasu, motywują do ruchu w stronę życia!"
+    },
+    "r": {
+      "title": "Rozwoju",
+      "description": "Miłość zakłada rozwój czyli wchodzenie coraz głębiej w siebie, by wydobywać prawdę. Podróż do wnętrza pozwala spotkać w głębi swojego serca Dawcę Miłości. Rozwój prowadzi do coraz ściślejszego zjednoczenia z miłością i uobecniania jej w codzienności."
+    },
+    "o": {
+      "title": "Osobowego",
+      "description": "Rozwój osobowy różni się od osobistego tym, że nie kończy się na sobie. Potrzebujemy poznawać, pokochać i troszczyć się o siebie. Jesteśmy bardzo ważni! Jest to punkt wyjścia do tego, by umieć prawdziwie kochać Boga i drugiego człowieka. Zostaliśmy bezgranicznie pokochani, żeby tę miłość celebrować i przekazywać dalej. Osoba jest stworzona do relacji i o jakość tych relacji ze sobą, innymi i Bogiem chcemy się zatroszczyć."
+    }
   }
 }
