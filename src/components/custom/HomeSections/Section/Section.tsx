@@ -51,11 +51,9 @@ export const Section = ({
           className={`h-full w-full object-cover shadow-2xl ${imageRadius}`}
         />
       </div>
-      <div
-        className={`flex-[3] p-14 ${!isLeft ? "text-right" : "text-left"} flex flex-col gap-10`}
-      >
+      <div className="flex flex-[3] flex-col gap-10 p-14">
         {textContents.map((textContent, index) => (
-          <TextBlock key={index} {...textContent} />
+          <TextBlock key={index} textAlignment={direction} {...textContent} />
         ))}
       </div>
     </section>
