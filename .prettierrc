@@ -13,7 +13,8 @@
     "react",
     "<THIRD_PARTY_MODULES>",
     "@app",
-    "@shared",
+    "@components",
+    "@utils",
     "^[./](?!.+\\.(\\w){1})",
     "^[./].+\\.(\\w){1}"
   ],

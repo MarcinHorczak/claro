@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Paths } from "@shared/paths";
+import { Paths } from "@utils/paths";
 
 export const useNavigationElements = () => {
   const t = useTranslations();

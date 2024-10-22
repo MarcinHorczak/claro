@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { Header } from "@shared/components";
-import "../../public/globals.css";
+import { Header } from "@components/custom";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Claro",
@@ -20,15 +20,10 @@ const RootLayout = async ({
 
   return (
     <html lang={locale}>
-      <body className="box-border inline-block h-screen w-full bg-white text-black antialiased">
+      <body>
         <NextIntlClientProvider messages={messages}>
-          <div className="flex h-full flex-col">
-            <Header />
-            <div className="flex-1">{children}</div>
-            <footer className="flex content-center justify-center bg-slate-100">
-              <div className="p-5">Footer</div>
-            </footer>
-          </div>
+          <Header />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
