@@ -18,7 +18,9 @@ const Home = () => {
           <h1 className="font-header text-center font-normal">
             {t.rich("home.shortDescription", {
               b: (chunks) => (
-                <b className="tracking-widest text-primary">{chunks}</b>
+                <span className="font-serif tracking-widest text-primary">
+                  {chunks}
+                </span>
               ),
             })}
           </h1>

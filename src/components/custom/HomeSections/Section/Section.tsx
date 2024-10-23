@@ -26,7 +26,6 @@ export const Section = ({
           <TextBlock {...textContent} />
         </div>
       </div>
-      <div className="custom-shape-divider-top"></div>
     </div>
   </section>
 );

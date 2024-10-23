@@ -14,7 +14,7 @@ export const useHomeSections = () => {
       },
     },
     {
-      imageClass: "bg-[url(/home/bible.webp)]",
+      imageClass: "bg-[url(/home/grow.webp)]",
       sectionId: "l",
       textContent: {
         letterIndex: 1,
@@ -32,7 +32,7 @@ export const useHomeSections = () => {
       },
     },
     {
-      imageClass: "bg-[url(/home/active.webp)]",
+      imageClass: "bg-[url(/home/deep.webp)]",
       sectionId: "r",
       textContent: {
         letterIndex: 3,
