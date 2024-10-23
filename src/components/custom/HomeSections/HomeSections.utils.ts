@@ -1,21 +1,23 @@
 import { useTranslations } from "next-intl";
 
-type Direction = "left" | "right";
-
 export const useHomeSections = () => {
   const t = useTranslations();
 
   return [
     {
-      imagePath: "/home/bible.webp",
-      imageAlt: "Bible",
-      sectionId: "cl",
-      direction: "left" as Direction,
+      imageClass: "bg-[url(/home/bible.webp)]",
+      sectionId: "c",
       textContents: [
         {
           title: t("home.c.title"),
           description: t("home.c.description"),
         },
+      ],
+    },
+    {
+      imageClass: "bg-[url(/home/bible.webp)]",
+      sectionId: "l",
+      textContents: [
         {
           title: t("home.l.title"),
           description: t("home.l.description"),
@@ -23,15 +25,19 @@ export const useHomeSections = () => {
       ],
     },
     {
-      imagePath: "/home/active.webp",
-      imageAlt: "Active",
-      sectionId: "ar",
-      direction: "right" as Direction,
+      imageClass: "bg-[url(/home/active.webp)]",
+      sectionId: "a",
       textContents: [
         {
           title: t("home.a.title"),
           description: t("home.a.description"),
         },
+      ],
+    },
+    {
+      imageClass: "bg-[url(/home/active.webp)]",
+      sectionId: "r",
+      textContents: [
         {
           title: t("home.r.title"),
           description: t("home.r.description"),
@@ -39,10 +45,8 @@ export const useHomeSections = () => {
       ],
     },
     {
-      imagePath: "/home/hands.webp",
-      imageAlt: "Hands",
+      imageClass: "bg-[url(/home/hands.webp)]",
       sectionId: "o",
-      direction: "left" as Direction,
       textContents: [
         {
           title: t("home.o.title"),

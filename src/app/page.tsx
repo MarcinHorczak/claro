@@ -6,14 +6,18 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex h-screen items-center p-14">
-        <p className="font-rwd text-center">
+      <div className="flex h-screen items-center p-14 md:px-32 xl:px-64">
+        <p className="font-header text-center font-normal">
           {t.rich("home.shortDescription", {
-            title: (chunks) => <b>{chunks}</b>,
+            b: (chunks) => (
+              <b className="tracking-widest text-primary">{chunks}</b>
+            ),
           })}
         </p>
       </div>
-      <HomeSections />
+      <div className="md:px-32 xl:px-64">
+        <HomeSections />
+      </div>
     </div>
   );
 };

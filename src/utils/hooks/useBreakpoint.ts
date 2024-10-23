@@ -10,5 +10,5 @@ export const useBreakpoint = (
 
   const breakpointValue = config.theme.screens[breakpoint];
 
-  return Number(width) >= parseInt(breakpointValue);
+  return Number(width || window?.innerWidth) >= parseInt(breakpointValue);
 };

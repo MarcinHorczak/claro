@@ -9,7 +9,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Helvetica", "sans"],
+      sans: ["Noto Sans", "sans"],
     },
     extend: {
       colors: {

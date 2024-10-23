@@ -9,7 +9,7 @@ export const Header = () => {
   const isScrolled = !!y && y > 0;
 
   const scrolledStyles = isScrolled
-    ? "py-3 xl:py-8 shadow-lg"
+    ? "py-3 xl:py-4 shadow-lg"
     : "py-5 xl:py-10";
 
   return (

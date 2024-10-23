@@ -1,6 +1,3 @@
-"use client";
-
-import { useBreakpoint } from "@utils";
 import { TextBlock } from "./TextBlock";
 
 interface Text {
@@ -10,52 +7,27 @@ interface Text {
 
 interface SectionProps {
   textContents: Text[];
-  imagePath: string;
-  imageAlt: string;
+  imageClass: string;
   sectionId: string;
-  direction: "left" | "right";
 }
 
 export const Section = ({
   textContents,
-  imagePath,
-  imageAlt,
+  imageClass,
   sectionId,
-  direction,
-}: SectionProps) => {
-  const isRowDirection = useBreakpoint("md");
-  const isLeft = direction === "left";
-
-  const flexDirection = isRowDirection
-    ? isLeft
-      ? "flex-row"
-      : "flex-row-reverse"
-    : "flex-col";
-  const imageRadius = isRowDirection
-    ? isLeft
-      ? "rounded-e-[150px]"
-      : "rounded-s-[150px]"
-    : "";
-
-  return (
-    <section
-      className={`flex ${flexDirection} items-center gap-5`}
-      id={sectionId}
+}: SectionProps) => (
+  <section className="flex w-full flex-col items-center gap-5" id={sectionId}>
+    <div
+      className={`h-full w-full ${imageClass} bg-cover bg-fixed bg-center bg-no-repeat`}
     >
-      <div
-        className={`flex h-screen flex-[2] ${isLeft ? "justify-start" : "justify-end"}`}
-      >
-        <img
-          src={imagePath}
-          alt={imageAlt}
-          className={`h-full w-full object-cover shadow-2xl ${imageRadius}`}
-        />
+      <div className="flex items-end pt-[50vh]">
+        <div className="flex flex-[3] flex-col justify-center gap-10 bg-white px-6 py-20 xl:p-32">
+          {textContents.map((textContent, index) => (
+            <TextBlock key={index} {...textContent} />
+          ))}
+        </div>
       </div>
-      <div className="flex flex-[3] flex-col gap-10 p-14">
-        {textContents.map((textContent, index) => (
-          <TextBlock key={index} textAlignment={direction} {...textContent} />
-        ))}
-      </div>
-    </section>
-  );
-};
+      <div className="custom-shape-divider-top"></div>
+    </div>
+  </section>
+);

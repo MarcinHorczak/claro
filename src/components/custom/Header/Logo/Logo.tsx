@@ -11,13 +11,11 @@ export const Logo = () => {
 
   return (
     <div className="flex flex-col items-center gap-1">
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary sm:h-24 sm:w-24">
-        <Image src={LogoIcon} alt="Logo" priority className="w-7 sm:w-12" />
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary">
+        <Image src={LogoIcon} alt="Logo" priority className="w-7" />
       </div>
       {showText && (
-        <p className="text-[1.375rem] font-bold tracking-widest text-primary">
-          {t("name")}
-        </p>
+        <p className="font-bold tracking-widest text-primary">{t("name")}</p>
       )}
     </div>
   );
