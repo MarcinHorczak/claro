@@ -1,9 +1,23 @@
+"use client";
+
+import { useWindowScroll } from "@uidotdev/usehooks";
 import { Logo } from "./Logo";
 import { Navigation } from "./Navigation";
 
-export const Header = () => (
-  <div className="flex items-center justify-between px-10 py-5 xl:px-20 xl:py-10">
-    <Logo />
-    <Navigation />
-  </div>
-);
+export const Header = () => {
+  const [{ y }] = useWindowScroll();
+  const isScrolled = !!y && y > 0;
+
+  const scrolledStyles = isScrolled
+    ? "py-3 xl:py-8 shadow-lg"
+    : "py-5 xl:py-10";
+
+  return (
+    <div
+      className={`duration-400 fixed flex w-full items-center justify-between bg-white px-10 transition-all ${scrolledStyles} xl:px-20`}
+    >
+      <Logo />
+      <Navigation />
+    </div>
+  );
+};

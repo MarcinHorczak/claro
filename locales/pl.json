@@ -1,5 +1,6 @@
 {
   "name": "CLARO",
+  "underConstruction": "Strona w budowie",
   "navigation": {
     "home": "Strona główna",
     "about": "O mnie",
@@ -8,7 +9,7 @@
     "contact": "Kontakt"
   },
   "home": {
-    "shortDescription": "CLARO - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.",
+    "shortDescription": "<title>CLARO</title> - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.",
     "c": {
       "title": "Chrześcijańskie",
       "description": "W swojej pracy opieramy się na chrześcijańskiej wizji człowieka. Bazujemy na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy."

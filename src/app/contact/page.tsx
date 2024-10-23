@@ -1,7 +1,5 @@
-export const metadata = {
-  title: "Claro - Kontakt",
-};
+import { UnderConstruction } from "@components/custom";
 
-const Contact = () => <div>Contact</div>;
+const Contact = () => <UnderConstruction />;
 
 export default Contact;

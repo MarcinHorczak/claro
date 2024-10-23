@@ -1,7 +1,5 @@
-export const metadata = {
-  title: "Claro - O mnie",
-};
+import { UnderConstruction } from "@components/custom";
 
-const About = () => <div>About</div>;
+const About = () => <UnderConstruction />;
 
 export default About;

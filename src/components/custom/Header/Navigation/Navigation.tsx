@@ -7,6 +7,9 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@components/ui/sheet";
 import { useBreakpoint } from "@utils";
@@ -32,18 +35,25 @@ export const Navigation = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <MenuIcon />
+        <MenuIcon size={40} strokeWidth={1.5} />
       </SheetTrigger>
-      <SheetContent side="top" className="w-full">
-        {navigationElements.map(({ href, name }, index) => (
-          <SheetClose asChild key={index}>
-            <Link href={href}>
-              <Button variant="ghost" className="w-full">
-                {name}
-              </Button>
-            </Link>
-          </SheetClose>
-        ))}
+      <SheetContent
+        side="top"
+        className="w-full bg-primary py-20 text-primary-foreground"
+      >
+        <SheetHeader>
+          <SheetTitle />
+          <SheetDescription />
+          {navigationElements.map(({ href, name }, index) => (
+            <SheetClose asChild key={index}>
+              <Link href={href}>
+                <Button variant="ghost" className="w-full py-8 font-bold">
+                  {name}
+                </Button>
+              </Link>
+            </SheetClose>
+          ))}
+        </SheetHeader>
       </SheetContent>
     </Sheet>
   );

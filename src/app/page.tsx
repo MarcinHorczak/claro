@@ -6,9 +6,13 @@ const Home = () => {
 
   return (
     <div>
-      <p className="font-rwd flex h-[calc(100vh_-_88px)] items-center p-14 pb-[176px] text-center sm:h-[calc(100vh_-_136px)] xl:h-[calc(100vh_-_176px)]">
-        {t("home.shortDescription")}
-      </p>
+      <div className="flex h-screen items-center p-14">
+        <p className="font-rwd text-center">
+          {t.rich("home.shortDescription", {
+            title: (chunks) => <b>{chunks}</b>,
+          })}
+        </p>
+      </div>
       <HomeSections />
     </div>
   );
