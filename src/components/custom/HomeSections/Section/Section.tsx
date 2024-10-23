@@ -3,16 +3,17 @@ import { TextBlock } from "./TextBlock";
 interface Text {
   title: string;
   description: string;
+  letterIndex: number;
 }
 
 interface SectionProps {
-  textContents: Text[];
+  textContent: Text;
   imageClass: string;
   sectionId: string;
 }
 
 export const Section = ({
-  textContents,
+  textContent,
   imageClass,
   sectionId,
 }: SectionProps) => (
@@ -20,11 +21,9 @@ export const Section = ({
     <div
       className={`h-full w-full ${imageClass} bg-cover bg-fixed bg-center bg-no-repeat`}
     >
-      <div className="flex items-end pt-[50vh]">
+      <div className="flex items-end pt-[50svh]">
         <div className="flex flex-[3] flex-col justify-center gap-10 bg-white px-6 py-20 xl:p-32">
-          {textContents.map((textContent, index) => (
-            <TextBlock key={index} {...textContent} />
-          ))}
+          <TextBlock {...textContent} />
         </div>
       </div>
       <div className="custom-shape-divider-top"></div>

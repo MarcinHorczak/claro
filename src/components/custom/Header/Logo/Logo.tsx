@@ -15,7 +15,7 @@ export const Logo = () => {
         <Image src={LogoIcon} alt="Logo" priority className="w-7" />
       </div>
       {showText && (
-        <p className="font-bold tracking-widest text-primary">{t("name")}</p>
+        <p className="font-serif tracking-widest text-primary">{t("name")}</p>
       )}
     </div>
   );

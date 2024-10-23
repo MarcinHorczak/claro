@@ -7,52 +7,47 @@ export const useHomeSections = () => {
     {
       imageClass: "bg-[url(/home/bible.webp)]",
       sectionId: "c",
-      textContents: [
-        {
-          title: t("home.c.title"),
-          description: t("home.c.description"),
-        },
-      ],
+      textContent: {
+        letterIndex: 0,
+        title: t("home.c.title"),
+        description: t("home.c.description"),
+      },
     },
     {
       imageClass: "bg-[url(/home/bible.webp)]",
       sectionId: "l",
-      textContents: [
-        {
-          title: t("home.l.title"),
-          description: t("home.l.description"),
-        },
-      ],
+      textContent: {
+        letterIndex: 1,
+        title: t("home.l.title"),
+        description: t("home.l.description"),
+      },
     },
     {
       imageClass: "bg-[url(/home/active.webp)]",
       sectionId: "a",
-      textContents: [
-        {
-          title: t("home.a.title"),
-          description: t("home.a.description"),
-        },
-      ],
+      textContent: {
+        letterIndex: 2,
+        title: t("home.a.title"),
+        description: t("home.a.description"),
+      },
     },
     {
       imageClass: "bg-[url(/home/active.webp)]",
       sectionId: "r",
-      textContents: [
-        {
-          title: t("home.r.title"),
-          description: t("home.r.description"),
-        },
-      ],
+      textContent: {
+        letterIndex: 3,
+        title: t("home.r.title"),
+        description: t("home.r.description"),
+      },
     },
     {
       imageClass: "bg-[url(/home/hands.webp)]",
       sectionId: "o",
-      textContents: [
-        {
-          title: t("home.o.title"),
-          description: t("home.o.description"),
-        },
-      ],
+      textContent: {
+        letterIndex: 4,
+        title: t("home.o.title"),
+        description: t("home.o.description"),
+      },
     },
   ];
 };
