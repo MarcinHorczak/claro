@@ -40,7 +40,4 @@
   .font-header {
     @apply text-[1rem] font-bold md:text-[1.5rem] lg:text-[1.75rem] xl:text-[2rem];
   }
-  .font-text {
-    @apply text-[1rem];
-  }
 }

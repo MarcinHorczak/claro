@@ -1,3 +1,6 @@
+"use client";
+
+import { useBreakpoint } from "@utils";
 import { TextBlock } from "./TextBlock";
 
 interface Text {
@@ -16,16 +19,23 @@ export const Section = ({
   textContent,
   imageClass,
   sectionId,
-}: SectionProps) => (
-  <section className="flex w-full flex-col items-center gap-5" id={sectionId}>
-    <div
-      className={`h-full w-full ${imageClass} bg-cover bg-fixed bg-center bg-no-repeat`}
-    >
-      <div className="flex items-end pt-[50svh]">
-        <div className="flex flex-[3] flex-col justify-center gap-10 bg-white px-6 py-20 xl:p-32">
-          <TextBlock {...textContent} />
+}: SectionProps) => {
+  const isDesktop = useBreakpoint("md");
+  const rwdBackground = isDesktop
+    ? "bg-cover bg-center"
+    : "bg-[length:auto_100svh] ";
+
+  return (
+    <section className="flex w-full flex-col items-center gap-5" id={sectionId}>
+      <div
+        className={`h-full w-full ${rwdBackground} ${imageClass} bg-fixed bg-no-repeat`}
+      >
+        <div className="flex items-end pt-[50svh]">
+          <div className="flex flex-[3] flex-col justify-center gap-10 bg-white px-6 py-20 xl:p-32">
+            <TextBlock {...textContent} />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
