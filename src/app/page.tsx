@@ -5,7 +5,7 @@ const Home = () => {
   const t = useTranslations();
 
   return (
-    <div className="md:px-32 xl:px-64">
+    <div>
       <div className="flex h-screen items-center p-14">
         <h1 className="font-header text-center font-normal">
           {t.rich("home.shortDescription", {
