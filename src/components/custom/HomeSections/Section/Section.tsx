@@ -23,7 +23,7 @@ export const Section = ({
   const isDesktop = useBreakpoint("md");
   const rwdBackground = isDesktop
     ? "bg-cover bg-center"
-    : "bg-[length:auto_100svh] ";
+    : "bg-[length:auto_100svh] bg-[center_top]";
 
   return (
     <section className="flex w-full flex-col items-center gap-5" id={sectionId}>
