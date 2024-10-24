@@ -24,7 +24,7 @@ const RootLayout = async ({
         <NextIntlClientProvider messages={messages}>
           <Header />
           <div className="flex w-full justify-center">
-            <div className="max-w-[960px]">{children}</div>
+            <div className="max-w-[1170px]">{children}</div>
           </div>
           <Footer />
         </NextIntlClientProvider>
