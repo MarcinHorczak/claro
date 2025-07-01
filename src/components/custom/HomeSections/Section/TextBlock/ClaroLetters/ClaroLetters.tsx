@@ -5,7 +5,7 @@ interface ClaroLettersProps {
 const CLARO = "CLARO";
 
 export const ClaroLetters = ({ letterIndex }: ClaroLettersProps) => (
-  <div className="font-serif flex gap-1 text-input">
+  <div className="flex gap-1 text-input">
     {CLARO.split("").map((letter, index) => (
       <p
         key={index}

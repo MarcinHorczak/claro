@@ -14,9 +14,7 @@ export const Logo = () => {
       <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary">
         <Image src={LogoIcon} alt="Logo" priority className="w-7" />
       </div>
-      {showText && (
-        <p className="font-serif tracking-widest text-primary">{t("name")}</p>
-      )}
+      {showText && <p className="tracking-widest text-primary">{t("name")}</p>}
     </div>
   );
 };

@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <div
-      className={`duration-400 fixed flex w-full items-center justify-between bg-white px-10 transition-all ${scrolledStyles} xl:px-20`}
+      className={`duration-400 fixed flex w-full items-center justify-between bg-slate-100 px-10 transition-all ${scrolledStyles} xl:px-20`}
     >
       <Logo />
       <Navigation />

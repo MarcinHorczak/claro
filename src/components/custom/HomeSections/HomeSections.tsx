@@ -4,6 +4,9 @@ import { useHomeSections } from "./HomeSections.utils";
 export const HomeSections = () => {
   const sections = useHomeSections();
 
-  // TODO: add section scrolling logic
-  return sections.map((section, index) => <Section key={index} {...section} />);
+  return sections.map((section, index) => (
+    <div key={index} className="py-10">
+      <Section {...section} />
+    </div>
+  ));
 };

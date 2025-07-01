@@ -6,7 +6,7 @@ import { Footer, Header } from "@components/custom";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "CLARO | Ula Kotas",
+  title: "CLARO | Ula Horczak",
   description: "Claro",
 };
 
