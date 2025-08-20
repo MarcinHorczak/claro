@@ -4,9 +4,7 @@
   "navigation": {
     "home": "Strona główna",
     "about": "O mnie",
-    "offers": "Oferta",
-    "prices": "Cennik",
-    "contact": "Kontakt"
+    "offers": "Oferta"
   },
   "footer": {
     "phone": "+48 792 415 527",

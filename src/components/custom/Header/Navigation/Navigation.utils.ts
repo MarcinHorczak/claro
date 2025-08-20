@@ -17,13 +17,5 @@ export const useNavigationElements = () => {
       name: t("navigation.offers"),
       href: Paths.Offers,
     },
-    {
-      name: t("navigation.prices"),
-      href: Paths.Prices,
-    },
-    {
-      name: t("navigation.contact"),
-      href: Paths.Contact,
-    },
   ];
 };
