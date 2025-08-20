@@ -8,7 +8,7 @@ export const Header = () => {
   const [{ y }] = useWindowScroll();
   const isScrolled = !!y && y > 0;
 
-  const scrolledStyles = isScrolled ? "py-3 xl:py-2 shadow-lg" : "py-5 xl:py-6";
+  const scrolledStyles = isScrolled ? "py-3 xl:py-1 shadow-lg" : "py-5 xl:py-3";
 
   return (
     <div
