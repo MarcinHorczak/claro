@@ -38,5 +38,9 @@
   },
   "about": {
     "description": "<p>CLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia. Ma wiele serc i twarzy, ale tą, którą najczęściej możecie spotkać, jestem ja - Ula.</p><p>Uwielbiam towarzyszyć w procesie rozwoju i poszukiwania prawdy. Empatyczne bycie z człowiekiem, poznawanie go i wspieranie w osiąganiu celów jest tym, co niezmiennie mnie zachwyca i fascynuje. Największą radość sprawia mi fakt, że mogę przyglądać się ważnym, uwalniającym i otwierającym na piękno życia zmianom.</p><p>Pasjonuje mnie wspólne poznawanie i wydobywanie darów – zasobów, które w wyjątkowy sposób złożone zostały w każdej osobie. Ogromnie cenna jest dla mnie przestrzeń bycia w relacji z człowiekiem, w której możliwa i naturalna jest autentyczność, szacunek i zaufanie.</p><p>Ukończyłam 5-letnie studia na kierunku Doradztwo Filozoficzne i Coaching oraz Teologię Duchowości na Uniwersytecie Śląskim. Jestem także trenerem TUS. Podczas swojej pracy warsztatowej bazuję na antropologii i duchowości chrześcijańskiej oraz dorobku nauk humanistycznych. Pracuję głównie z osobami dorosłymi.</p>"
+  },
+  "notFound": {
+    "description": "Strona, której szukasz, nie istnieje.",
+    "backToHome": "Wróć do strony głównej"
   }
 }
