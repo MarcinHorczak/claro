@@ -27,5 +27,9 @@ export const useNavigationElements = (): NavigationElementProps[] => {
         },
       ],
     },
+    {
+      name: t("navigation.contact"),
+      href: Paths.Contact,
+    },
   ];
 };

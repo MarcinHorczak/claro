@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import { Toaster } from "sonner";
 import { Footer, Header, NoSSRWrapper } from "@components/custom";
 import "../globals.css";
 
@@ -23,6 +24,7 @@ const RootLayout = async ({
       <body>
         <NoSSRWrapper>
           <NextIntlClientProvider messages={messages}>
+            <Toaster />
             <Header />
             {children}
             <Footer />

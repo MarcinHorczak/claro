@@ -41,3 +41,13 @@
     @apply text-[1rem] font-bold md:text-[1.5rem] lg:text-[1.75rem] xl:text-[1.75rem];
   }
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
