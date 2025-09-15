@@ -2,11 +2,11 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { Footer, Header } from "@components/custom";
+import { Footer, Header, NoSSRWrapper } from "@components/custom";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "CLARO | Ula Horczak",
+  title: "CLARO | Urszula Horczak",
   description: "Claro",
 };
 
@@ -21,13 +21,13 @@ const RootLayout = async ({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <div className="flex w-full justify-center">
-            <div className="max-w-[1170px]">{children}</div>
-          </div>
-          <Footer />
-        </NextIntlClientProvider>
+        <NoSSRWrapper>
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </NoSSRWrapper>
       </body>
     </html>
   );

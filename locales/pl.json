@@ -4,10 +4,14 @@
   "navigation": {
     "home": "Strona główna",
     "about": "O mnie",
-    "offers": "Oferta"
+    "offers": {
+      "title": "Oferta",
+      "coaching": "Coaching",
+      "workshops": "Warsztaty grupowe"
+    }
   },
   "footer": {
-    "phone": "+48 797 774 387",
+    "phone": "+48 519 770 996",
     "email": "claro.rozwoj@gmail.com",
     "copyright": "© {year} CLARO"
   },
@@ -15,29 +19,48 @@
     "shortDescription": "<b>CLARO</b> - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.",
     "c": {
       "title": "Chrześcijańskie",
-      "description": "W swojej pracy opieramy się na chrześcijańskiej wizji człowieka. Bazujemy na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy."
+      "description": "<p>W swojej pracy opieramy się na chrześcijańskiej wizji człowieka. Bazujemy na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy.</p>"
     },
     "l": {
       "title": "Laboratorium",
-      "description": "W warunkach pełnego zaufania i poczucia bezpieczeństwa chcemy pochylać się z troską nad każdą osobą. Towarzyszymy w procesie prób i błędów. Tworzymy narzędzia, by wydobywać, badać, rozeznawać a później pielęgnować i troszczyć się o wzrost tego, co najbardziej życiodajne."
+      "description": "<p>W warunkach pełnego zaufania i poczucia bezpieczeństwa chcemy pochylać się z troską nad każdą osobą. Towarzyszymy w procesie prób i błędów. Tworzymy narzędzia, by wydobywać, badać, rozeznawać a później pielęgnować i troszczyć się o wzrost tego, co najbardziej życiodajne.</p>"
     },
     "a": {
       "title": "Aktywnego",
-      "description": "Tworzymy przestrzeń zaangażowania, która wprowadza w dynamiczny proces zmiany. Formy warsztatowe sprzyjają wyjściu z bierności i impasu, motywują do ruchu w stronę życia!"
+      "description": "<p>Tworzymy przestrzeń zaangażowania, która wprowadza w dynamiczny proces zmiany. Formy warsztatowe sprzyjają wyjściu z bierności i impasu, motywują do ruchu w stronę życia!</p>"
     },
     "r": {
       "title": "Rozwoju",
-      "description": "Miłość zakłada rozwój czyli wchodzenie coraz głębiej w siebie, by wydobywać prawdę. Podróż do wnętrza pozwala spotkać w głębi swojego serca Dawcę Miłości. Rozwój prowadzi do coraz ściślejszego zjednoczenia z miłością i uobecniania jej w codzienności."
+      "description": "<p>Miłość zawsze zaprasza do rozwoju czyli do docierania do głębi swojego „Ja”. Tam możemy spotkać Prawdę i Życie. Im bardziej się rozwijamy - tym bardziej stajemy się sobą. Zaczynamy żyć w wolności, pokoju i twórczej harmonii ze sobą, drugim człowiekiem i Bogiem.</p><p>Chcemy patrzeć na siebie holistycznie -  rozwijać sferę ciała, psychiki i ducha.</p>"
     },
     "o": {
       "title": "Osobowego",
-      "description": "Rozwój osobowy różni się od osobistego tym, że nie kończy się na sobie. Potrzebujemy poznawać, pokochać i troszczyć się o siebie. Jesteśmy bardzo ważni! Jest to punkt wyjścia do tego, by umieć prawdziwie kochać Boga i drugiego człowieka. Zostaliśmy bezgranicznie pokochani, żeby tę miłość celebrować i przekazywać dalej. Osoba jest stworzona do relacji i o jakość tych relacji ze sobą, innymi i Bogiem chcemy się zatroszczyć."
+      "description": "<p>Rozwój osobowy różni się od osobistego tym, że nie kończy się na sobie. Potrzebujemy poznawać, pokochać i troszczyć się o siebie. Jesteśmy bardzo ważni! Jest to punkt wyjścia do tego, by umieć prawdziwie kochać Boga i drugiego człowieka. Zostaliśmy bezgranicznie pokochani, żeby tę miłość celebrować i przekazywać dalej. Osoba jest stworzona do relacji i o jakość tych relacji ze sobą, innymi i Bogiem chcemy się zatroszczyć.</p>"
     },
-    "contactWithUs": "Skontaktuj się z nami",
+    "contactWithUs": "Skontaktuj się",
     "contact": "Kontakt"
   },
   "about": {
-    "description": "<p>CLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia. Ma wiele serc i twarzy, ale tą, którą najczęściej możecie spotkać, jestem ja - Ula.</p><p>Uwielbiam towarzyszyć w procesie rozwoju i poszukiwania prawdy. Empatyczne bycie z człowiekiem, poznawanie go i wspieranie w osiąganiu celów jest tym, co niezmiennie mnie zachwyca i fascynuje. Największą radość sprawia mi fakt, że mogę przyglądać się ważnym, uwalniającym i otwierającym na piękno życia zmianom.</p><p>Pasjonuje mnie wspólne poznawanie i wydobywanie darów – zasobów, które w wyjątkowy sposób złożone zostały w każdej osobie. Ogromnie cenna jest dla mnie przestrzeń bycia w relacji z człowiekiem, w której możliwa i naturalna jest autentyczność, szacunek i zaufanie.</p><p>Ukończyłam 5-letnie studia na kierunku Doradztwo Filozoficzne i Coaching oraz Teologię Duchowości na Uniwersytecie Śląskim. Jestem także trenerem TUS. Podczas swojej pracy warsztatowej bazuję na antropologii i duchowości chrześcijańskiej oraz dorobku nauk humanistycznych. Pracuję głównie z osobami dorosłymi.</p>"
+    "name": "Urszula Horczak",
+    "description": "<p>Uwielbiam towarzyszyć w procesie rozwoju i poszukiwania prawdy. Empatyczne bycie z człowiekiem, poznawanie go i wspieranie w osiąganiu celów jest tym, co niezmiennie mnie zachwyca i fascynuje. Największą radość sprawia mi fakt, że mogę przyglądać się ważnym, uwalniającym i otwierającym na piękno życia zmianom.</p><p>Pasjonuje mnie wspólne poznawanie i wydobywanie darów - zasobów, które w wyjątkowy sposób złożone zostały w każdej osobie. Cenię przestrzeń bycia w relacji z człowiekiem, w której możliwa i naturalna jest autentyczność, szacunek i zaufanie.</p><p>Ukończyłam 5-letnie studia na kierunku Doradztwo Filozoficzne i Coaching oraz Teologię Duchowości na Uniwersytecie Śląskim. Jestem także trenerem TUS. Podczas swojej pracy warsztatowej bazuję na antropologii i duchowości chrześcijańskiej oraz dorobku nauk humanistycznych. Pracuję głównie z osobami dorosłymi.</p>"
+  },
+  "offers": {
+    "workshops": {
+      "title": "Warsztaty",
+      "description": "Szkolenia i warsztaty rozwojowe na zamówienie.\nKierowane dla różnych grup (małżonków, dorosłych, młodzieży, duchownych).\nCLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia.",
+      "workshopsInfo": {
+        "title": "Czym są warsztaty?",
+        "description": "<div><p>Warsztaty dają możliwość przyjrzenia się relacji ze sobą, z drugim człowiekiem i Bogiem. Są czasem nabywania wiedzy i samoświadomości, by pełniej i dojrzalej realizować chrześcijańską wizję miłości. Warsztaty są zastosowaniem holistycznego podejścia biorącego pod uwagę 3 sfery osoby: ciało, psychikę i ducha.</p><p>Warsztaty mogą odbywać się jednorazowo lub stanowić proces kilku spotkań. Oferta do uzgodnienia indywidualnego.</p></div>"
+      },
+      "workshopsTopic": {
+        "title": "Dotyczą takich tematów jak:",
+        "description": "<ul><li>budowanie bliskich relacji</li><li>uczucia w życiu duchowym</li><li>świadoma wspólnota</li><li>emocje i potrzeby</li><li>rozwiązywanie konfliktów</li><li>twórcze przeżywanie kryzysu</li><li>komunikacja budująca bliskość</li><li>asertywność</li><li>odkrywanie misji i celu</li><li>zdrowa duchowość</li><li>dojrzałość osobowa a relacje</li><li>integracja psycho-duchowa</li><li>poszukiwanie sensu</li><li>itp.</li></ul>"
+      },
+      "workshopsIf": {
+        "title": "Jeśli:",
+        "description": "<div><ul><li>Szukasz przestrzeni, w której razem z innymi będziesz mógł przebyć drogę zmiany?</li><li>Zależy Ci na świadomym kierowaniu swoim życiem?</li><li>Chcesz odkrywać prawdę o sobie?</li><li>Widzisz potrzebę pracy nad swoimi relacjami?</li><li>Chcesz się rozwijać duchowo i emocjonalnie?</li><li>Chcesz uczyć się zdrowo komunikować?</li><li>Zależy Ci na rozwoju Twojej wspólnoty?</li></ul><h3>...zapraszamy do kontaktu!</h3></div>"
+      }
+    }
   },
   "notFound": {
     "description": "Strona, której szukasz, nie istnieje.",

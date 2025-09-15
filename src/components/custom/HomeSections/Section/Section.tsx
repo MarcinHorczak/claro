@@ -3,8 +3,8 @@
 import { TextBlock } from "./TextBlock";
 
 interface Text {
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 interface SectionProps {
