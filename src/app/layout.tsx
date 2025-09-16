@@ -24,7 +24,12 @@ const RootLayout = async ({
       <body>
         <NoSSRWrapper>
           <NextIntlClientProvider messages={messages}>
-            <Toaster />
+            <Toaster
+              richColors
+              position="bottom-center"
+              duration={8000}
+              closeButton
+            />
             <Header />
             {children}
             <Footer />

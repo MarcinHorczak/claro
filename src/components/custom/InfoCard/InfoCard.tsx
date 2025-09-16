@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { Paths } from "@utils/paths";
 
 interface InfoCardProps {
   titleKey: string;
@@ -32,6 +34,11 @@ export const InfoCard = ({ titleKey, descriptionKey }: InfoCardProps) => {
           </li>
         ),
         h3: (chunks) => <h3 className="text-md font-bold">{chunks}</h3>,
+        contactLink: (chunks) => (
+          <Link href={Paths.Contact} className="text-primary underline">
+            {chunks}
+          </Link>
+        ),
       })}
     </section>
   );

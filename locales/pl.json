@@ -59,7 +59,7 @@
       },
       "workshopsIf": {
         "title": "Jeśli:",
-        "description": "<div><ul><li>Szukasz przestrzeni, w której razem z innymi będziesz mógł przebyć drogę zmiany?</li><li>Zależy Ci na świadomym kierowaniu swoim życiem?</li><li>Chcesz odkrywać prawdę o sobie?</li><li>Widzisz potrzebę pracy nad swoimi relacjami?</li><li>Chcesz się rozwijać duchowo i emocjonalnie?</li><li>Chcesz uczyć się zdrowo komunikować?</li><li>Zależy Ci na rozwoju Twojej wspólnoty?</li></ul><h3>...zapraszamy do kontaktu!</h3></div>"
+        "description": "<div><ul><li>Szukasz przestrzeni, w której razem z innymi będziesz mógł przebyć drogę zmiany?</li><li>Zależy Ci na świadomym kierowaniu swoim życiem?</li><li>Chcesz odkrywać prawdę o sobie?</li><li>Widzisz potrzebę pracy nad swoimi relacjami?</li><li>Chcesz się rozwijać duchowo i emocjonalnie?</li><li>Chcesz uczyć się zdrowo komunikować?</li><li>Zależy Ci na rozwoju Twojej wspólnoty?</li></ul><h3>...zapraszamy do <contactLink>kontaktu</contactLink>!</h3></div>"
       }
     }
   },
@@ -73,7 +73,7 @@
     "message": "Wiadomość",
     "send": "Wyślij wiadomość",
     "success": "Wiadomość została wysłana",
-    "error": "Wystąpił błąd podczas wysyłania wiadomości"
+    "error": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj później lub skontaktuj się z nami na adres claro.rozwoj@gmail.com"
   },
   "notFound": {
     "description": "Strona, której szukasz, nie istnieje.",

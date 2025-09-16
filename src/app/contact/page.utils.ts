@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { WEBHOOK_URL } from "@config";
+import { WEBHOOK_URL, WebhookStatus } from "@config";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { useTranslations } from "next-intl";
@@ -45,7 +45,12 @@ export const useSubmitHandler = () => {
   const onSubmit = async (data: ContactFormValues) => {
     await axios
       .post(WEBHOOK_URL, data)
-      .then(() => {
+      .then(({ data }) => {
+        // Webhook return status Accepted by default when is not enabled in Make.com
+        if (data === WebhookStatus.Accepted) {
+          toast.error(t("contact.error"));
+          return;
+        }
         toast.success(t("contact.success"));
       })
       .catch(() => {

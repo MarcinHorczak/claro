@@ -12,23 +12,25 @@ import {
 const Contact = () => {
   const t = useTranslations();
   const formProps = useFormProps();
-  const { handleSubmit, register } = formProps;
+  const { handleSubmit, register, formState } = formProps;
+  const { isSubmitting } = formState;
   const { onSubmit } = useSubmitHandler();
 
   return (
     <ContentContainer>
       <HeaderSpacer />
-      <div className="mx-auto max-w-2xl px-6 pb-32 pt-16">
-        <div className="mb-8 flex flex-col gap-4">
-          <h1 className="text-3xl font-bold text-primary">
+      <div className="mx-auto max-w-2xl px-6 pb-32 pt-12 md:pt-14 xl:pt-20">
+        <div className="mb-10 flex flex-col gap-2">
+          <h1 className="text-lg font-bold text-primary md:text-3xl">
             {t("contact.title")}
           </h1>
-          <p className="text-muted-foreground">{t("contact.description")}</p>
+          <p className="md:text-md text-sm text-muted-foreground">
+            {t("contact.description")}
+          </p>
         </div>
-        <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
+        <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <Input
-              id="name"
               label={t("contact.name")}
               placeholder={t("contact.name")}
               required
@@ -36,7 +38,6 @@ const Contact = () => {
             />
 
             <Input
-              id="phone"
               type="number"
               label={t("contact.phone")}
               placeholder={t("contact.phone")}
@@ -44,7 +45,6 @@ const Contact = () => {
             />
           </div>
           <Input
-            id="email"
             type="email"
             label={t("contact.email")}
             placeholder={t("contact.email")}
@@ -52,14 +52,12 @@ const Contact = () => {
             {...register(ContactFormFields.Email)}
           />
           <Input
-            id="subject"
             label={t("contact.subject")}
             placeholder={t("contact.subject")}
             required
             {...register(ContactFormFields.Subject)}
           />
           <Textarea
-            id="message"
             label={t("contact.message")}
             placeholder={t("contact.message")}
             className="min-h-[120px]"
@@ -67,7 +65,13 @@ const Contact = () => {
             {...register(ContactFormFields.Message)}
           />
           <div className="flex justify-end">
-            <Button type="submit" className="w-full sm:w-auto" size="lg">
+            <Button
+              type="submit"
+              className="w-full sm:w-auto"
+              size="lg"
+              loading={isSubmitting}
+              disabled={isSubmitting}
+            >
               {t("contact.send")}
             </Button>
           </div>
