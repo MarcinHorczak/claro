@@ -3,10 +3,8 @@ import { WEBHOOK_URL, WebhookStatus } from "@config";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/router";
 import { toast } from "sonner";
 import { z } from "zod";
-import { Paths } from "@utils/paths";
 
 export enum ContactFormFields {
   Name = "name",
@@ -43,7 +41,6 @@ export const useFormProps = () =>
 
 export const useSubmitHandler = () => {
   const t = useTranslations();
-  const navigate = useRouter();
 
   const onSubmit = async (data: ContactFormValues) => {
     await axios
@@ -55,7 +52,6 @@ export const useSubmitHandler = () => {
           return;
         }
         toast.success(t("contact.success"));
-        navigate.push(Paths.Home);
       })
       .catch(() => {
         toast.error(t("contact.error"));
