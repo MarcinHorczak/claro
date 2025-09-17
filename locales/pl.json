@@ -1,6 +1,10 @@
 {
   "name": "CLARO",
   "underConstruction": "Strona w budowie",
+  "meta": {
+    "title": "CLARO || Urszula Horczak",
+    "description": "Claro"
+  },
   "navigation": {
     "home": "Strona główna",
     "about": "O mnie",

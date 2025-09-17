@@ -1,15 +1,18 @@
 import { ReactNode } from "react";
-import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Toaster } from "sonner";
-import { Footer, Header } from "@components/custom";
+import { Footer, Header, NoSSRWrapper } from "@components/custom";
 import "../globals.css";
 
-export const metadata: Metadata = {
-  title: "CLARO | Urszula Horczak",
-  description: "Claro",
-};
+export async function generateMetadata() {
+  const t = await getTranslations();
+
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+  };
+}
 
 const RootLayout = async ({
   children,
@@ -22,19 +25,19 @@ const RootLayout = async ({
   return (
     <html lang={locale}>
       <body>
-        {/* <NoSSRWrapper> */}
-        <NextIntlClientProvider messages={messages}>
-          <Toaster
-            richColors
-            position="bottom-center"
-            duration={8000}
-            closeButton
-          />
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
-        {/* </NoSSRWrapper> */}
+        <NoSSRWrapper>
+          <NextIntlClientProvider messages={messages}>
+            <Toaster
+              richColors
+              position="bottom-center"
+              duration={8000}
+              closeButton
+            />
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </NoSSRWrapper>
       </body>
     </html>
   );
