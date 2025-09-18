@@ -32,10 +32,10 @@
 }
 @layer base {
   * {
-    @apply scroll-smooth border-border;
+    @apply scroll-smooth;
   }
   body {
-    @apply box-border inline-block h-screen w-full bg-background text-foreground antialiased;
+    @apply bg-background text-foreground box-border inline-block h-screen w-full antialiased;
   }
   .font-header {
     @apply text-[1rem] font-bold md:text-[1.5rem] lg:text-[1.75rem] xl:text-[1.75rem];
