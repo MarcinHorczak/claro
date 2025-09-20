@@ -73,6 +73,10 @@
     "workshops": {
       "title": "Warsztaty",
       "description": "Szkolenia i warsztaty rozwojowe na zamówienie.\nKierowane dla różnych grup (małżonków, dorosłych, młodzieży, duchownych).\nCLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia.",
+      "offers": {
+        "title": "Aktualne propozycje warsztatów",
+        "description": "Odkryj propozycje warsztatów, które towarzyszą w rozwoju"
+      },
       "workshopsInfo": {
         "title": "Czym są warsztaty?",
         "description": "<div><p>Warsztaty dają możliwość przyjrzenia się relacji ze sobą, z drugim człowiekiem i Bogiem. Są czasem nabywania wiedzy i samoświadomości, by pełniej i dojrzalej realizować chrześcijańską wizję miłości. Warsztaty są zastosowaniem holistycznego podejścia biorącego pod uwagę 3 sfery osoby: ciało, psychikę i ducha.</p><p>Warsztaty mogą odbywać się jednorazowo lub stanowić proces kilku spotkań. Oferta do uzgodnienia indywidualnego.</p></div>"

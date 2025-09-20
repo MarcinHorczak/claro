@@ -5,18 +5,20 @@ const Home = () => {
   const t = useTranslations();
 
   return (
-    <ContentContainer>
-      <div className="flex h-screen items-center p-14">
-        <h1 className="font-header text-center font-normal">
-          {t.rich("home.shortDescription", {
-            b: (chunks) => (
-              <span className="tracking-widest text-primary">{chunks}</span>
-            ),
-          })}
-        </h1>
-      </div>
+    <div>
+      <ContentContainer>
+        <div className="flex h-screen items-center p-14">
+          <h1 className="font-header text-center font-normal">
+            {t.rich("home.shortDescription", {
+              b: (chunks) => (
+                <span className="tracking-widest text-primary">{chunks}</span>
+              ),
+            })}
+          </h1>
+        </div>
+      </ContentContainer>
       <HomeSections />
-    </ContentContainer>
+    </div>
   );
 };
 

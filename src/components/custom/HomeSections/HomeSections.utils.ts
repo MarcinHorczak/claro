@@ -1,3 +1,5 @@
+import { PolygonVariant } from "@utils/enums";
+
 export const useHomeSections = () => {
   return [
     {
@@ -8,6 +10,7 @@ export const useHomeSections = () => {
         titleKey: "home.c.title",
         descriptionKey: "home.c.description",
       },
+      polygonVariants: [PolygonVariant.TopLeft, PolygonVariant.BottomRight],
     },
     {
       sectionIndex: 1,
@@ -26,6 +29,7 @@ export const useHomeSections = () => {
         titleKey: "home.a.title",
         descriptionKey: "home.a.description",
       },
+      polygonVariants: [PolygonVariant.TopRight, PolygonVariant.BottomLeft],
     },
     {
       sectionIndex: 3,
@@ -44,6 +48,7 @@ export const useHomeSections = () => {
         titleKey: "home.o.title",
         descriptionKey: "home.o.description",
       },
+      polygonVariants: [PolygonVariant.TopLeft],
     },
   ];
 };

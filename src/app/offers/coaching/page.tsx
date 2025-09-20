@@ -7,6 +7,7 @@ import {
   HeaderSpacer,
   InfoCard,
 } from "@components/custom";
+import { PolygonVariant } from "@utils/enums";
 import LifeCoachingImage from "/public/images/session-1.webp";
 import RelationshipCoachingImage from "/public/images/session-2.webp";
 
@@ -29,8 +30,7 @@ const Coaching = () => {
         image={RelationshipCoachingImage}
         reverse
         bgColor="bg-orange-100"
-        topPolygon
-        bottomPolygon
+        polygonVariants={[PolygonVariant.TopLeft, PolygonVariant.BottomRight]}
       />
       <ContentContainer>
         <div className="px-2 py-8 md:px-4 md:py-16">

@@ -1,38 +1,50 @@
 import { ReactNode } from "react";
+import { PolygonVariant } from "@utils/enums";
 import { PolygonClip } from "./PolygonClip";
 
 interface ContentContainerProps {
   children: ReactNode;
   bgColor?: string;
-  topPolygon?: boolean;
-  bottomPolygon?: boolean;
   polygonHeight?: number;
+  polygonVariants?: PolygonVariant[];
 }
 
 export const ContentContainer = ({
   children,
   bgColor,
-  topPolygon = false,
-  bottomPolygon = false,
   polygonHeight,
-}: ContentContainerProps) => (
-  <div>
-    {topPolygon && (
-      <PolygonClip
-        polygonHeight={polygonHeight}
-        bgColor={bgColor}
-        variant="top"
-      />
-    )}
-    <div className={`flex w-full justify-center ${bgColor || ""}`}>
-      <div className="w-full max-w-[1170px]">{children}</div>
+  polygonVariants,
+}: ContentContainerProps) => {
+  const isTopPolygon =
+    polygonVariants?.includes(PolygonVariant.TopLeft) ||
+    polygonVariants?.includes(PolygonVariant.TopRight);
+  const isBottomPolygon =
+    polygonVariants?.includes(PolygonVariant.BottomLeft) ||
+    polygonVariants?.includes(PolygonVariant.BottomRight);
+
+  return (
+    <div>
+      {isTopPolygon && (
+        <PolygonClip
+          polygonHeight={polygonHeight}
+          bgColor={bgColor}
+          polygonVariants={polygonVariants?.filter((variant) =>
+            variant.startsWith("top"),
+          )}
+        />
+      )}
+      <div className={`flex w-full justify-center ${bgColor || ""}`}>
+        <div className="w-full max-w-[1170px]">{children}</div>
+      </div>
+      {isBottomPolygon && (
+        <PolygonClip
+          polygonHeight={polygonHeight}
+          bgColor={bgColor}
+          polygonVariants={polygonVariants?.filter((variant) =>
+            variant.startsWith("bottom"),
+          )}
+        />
+      )}
     </div>
-    {bottomPolygon && (
-      <PolygonClip
-        polygonHeight={polygonHeight}
-        bgColor={bgColor}
-        variant="bottom"
-      />
-    )}
-  </div>
-);
+  );
+};
