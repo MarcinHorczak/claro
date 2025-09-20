@@ -7,17 +7,18 @@ interface PolygonClipProps {
 }
 
 export const PolygonClip = ({
-  polygonHeight = 64,
+  polygonHeight = 16,
   bgColor,
   variant,
 }: PolygonClipProps) => (
-  <div className={`relative h-[${polygonHeight}px]`}>
+  <div className="relative" style={{ height: `${polygonHeight}` }}>
     <div
       className={`absolute w-full ${variant === "top" ? "bottom-0" : "top-0"}`}
     >
       <div
-        className={`absolute ${variant === "top" ? "bottom-0" : "top-0"} h-[${polygonHeight / 2}px] w-full ${bgColor} opacity-40`}
+        className={`absolute ${variant === "top" ? "bottom-0" : "top-0"} w-full ${bgColor} opacity-40`}
         style={{
+          height: `${polygonHeight / 2}`,
           clipPath: cn(
             variant === "top" && "polygon(0 100%, 100% 0%, 100% 100%, 0% 100%)",
             variant === "bottom" && "polygon(0 0%, 100% 0%, 100% 100%, 0% 0%)",
@@ -29,8 +30,9 @@ export const PolygonClip = ({
       className={`absolute w-full ${variant === "top" ? "bottom-0" : "top-0"}`}
     >
       <div
-        className={`absolute ${variant === "top" ? "bottom-0" : "top-0"} h-[${polygonHeight}px] w-full ${bgColor} opacity-30`}
+        className={`absolute ${variant === "top" ? "bottom-0" : "top-0"} w-full ${bgColor} opacity-30`}
         style={{
+          height: `${polygonHeight}`,
           clipPath: cn(
             variant === "top" && "polygon(0 100%, 100% 0%, 100% 100%, 0% 100%)",
             variant === "bottom" && "polygon(0 0%, 100% 0%, 100% 100%, 0% 0%)",
