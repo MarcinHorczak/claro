@@ -14,7 +14,7 @@ export const ContentContainer = ({
   bgColor,
   topPolygon = false,
   bottomPolygon = false,
-  polygonHeight = 16,
+  polygonHeight,
 }: ContentContainerProps) => (
   <div>
     {topPolygon && (
