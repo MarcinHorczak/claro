@@ -40,7 +40,7 @@ export const CoachingSection = ({
           <p className="text-base text-muted-foreground">{subtitle}</p>
         </div>
         <div
-          className={`flex flex-col gap-8 lg:${reverse ? "flex-row-reverse" : "flex-row"} lg:items-stretch lg:px-4 xl:px-0`}
+          className={`flex flex-col gap-8 lg:items-stretch lg:px-4 xl:px-0 ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
         >
           <div className="lg:w-2/5">
             <div className="relative h-64 md:h-96 lg:h-80">
