@@ -6,3 +6,7 @@ export { NoSSRWrapper } from "./NoSSRWrapper";
 export { InfoCard } from "./InfoCard";
 export { HeaderSpacer } from "./HeaderSpacer";
 export { ContentContainer } from "./ContentContainer";
+export { WorkshopsList } from "./WorkshopsList";
+export { MarkdownPreview } from "./MarkdownPreview";
+export { DateRangeBadge } from "./DateRangeBadge";
+export { CoachingSection } from "./CoachingSection";

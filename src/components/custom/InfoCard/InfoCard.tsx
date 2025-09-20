@@ -11,14 +11,14 @@ export const InfoCard = ({ titleKey, descriptionKey }: InfoCardProps) => {
   const t = useTranslations();
 
   return (
-    <section className="w-full rounded-3xl bg-white p-8 shadow-xl md:p-12">
+    <section className="w-full rounded-3xl bg-white p-6 shadow-xl md:p-12">
       <h2 className="mb-6 text-lg font-bold text-primary md:text-2xl">
         {t(titleKey)}
       </h2>
       {t.rich(descriptionKey, {
         div: (chunks) => <div className="space-y-4">{chunks}</div>,
         p: (chunks) => (
-          <p className="text-md text-justify indent-8 leading-relaxed">
+          <p className="text-md indent-8 leading-relaxed md:text-justify">
             {chunks}
           </p>
         ),
@@ -39,6 +39,11 @@ export const InfoCard = ({ titleKey, descriptionKey }: InfoCardProps) => {
             {chunks}
           </Link>
         ),
+        text: (chunks) => <p className="text-md">{chunks}</p>,
+        bold: (chunks) => (
+          <span className="font-bold text-primary">{chunks}</span>
+        ),
+        italic: (chunks) => <span className="italic">{chunks}</span>,
       })}
     </section>
   );

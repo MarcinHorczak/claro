@@ -50,6 +50,26 @@
     "description": "<p>Uwielbiam towarzyszyć w procesie rozwoju i poszukiwania prawdy. Empatyczne bycie z człowiekiem, poznawanie go i wspieranie w osiąganiu celów jest tym, co niezmiennie mnie zachwyca i fascynuje. Największą radość sprawia mi fakt, że mogę przyglądać się ważnym, uwalniającym i otwierającym na piękno życia zmianom.</p><p>Pasjonuje mnie wspólne poznawanie i wydobywanie darów - zasobów, które w wyjątkowy sposób złożone zostały w każdej osobie. Cenię przestrzeń bycia w relacji z człowiekiem, w której możliwa i naturalna jest autentyczność, szacunek i zaufanie.</p><p>Ukończyłam 5-letnie studia na kierunku Doradztwo Filozoficzne i Coaching oraz Teologię Duchowości na Uniwersytecie Śląskim. Jestem także trenerem TUS. Podczas swojej pracy warsztatowej bazuję na antropologii i duchowości chrześcijańskiej oraz dorobku nauk humanistycznych. Pracuję głównie z osobami dorosłymi.</p>"
   },
   "offers": {
+    "coaching": {
+      "life": {
+        "title": "Life Coaching",
+        "subtitle": "Sesje indywidualne",
+        "description": "<p>Life Coaching obejmuje sesje indywidualne. Skupia się na tematach życiowych: celach prywatnych, relacjach, związkach, rozwoju osobistym, poznaniu siebie, wyborze drogi/misji życiowej, planach na przyszłość, pracy na przekonaniach, zasobach, przechodzeniu przez kryzys.</p><p>Life Coaching z założenia jest szybkim i dającym długotrwałe efekty procesem. Profesjonalny coaching indywidualny prowadzony jest w taki sposób, by klient po 6-10 spotkaniach mógł działać samodzielnie, korzystając z efektów przebytych sesji, według uśrednionych standardów etycznych Coacha np. ICC, ICF, IC czy wg programów nauczania zatwierdzonych przez MEN.</p>"
+      },
+      "relationship": {
+        "title": "Coaching Relacji",
+        "subtitle": "Dla małżeństw, narzeczonych i par",
+        "description": "<p>Coaching relacji skierowany dla małżeństw/narzeczonych/par - umożliwia uważne przyjrzenie się relacji. Pomaga budować związek zdrowy, wspierający i prowadzący do rozwoju. Jest przestrzenią pokonywania kryzysów, uczenia się komunikacji i miłości w codzienności.</p>"
+      },
+      "placeForYou": {
+        "title": "Jeśli:",
+        "description": "<div><ul><li>Trudno Ci zaakceptować i pokochać siebie</li><li>Widzisz wyzwania w relacji ze sobą, innymi i Bogiem</li><li>Doświadczasz kryzysu w życiu, powołaniu</li><li>Szukasz harmonii i poczucia sensu</li><li>Chcesz poznawać siebie i świadomie kierować swoim życiem</li><li>Chcesz rozwijać w sobie sferę psychiczną i duchową</li><li>Chcesz poznawać swoje emocje i twórczo nimi zarządzać</li></ul><text>i do tego nie szukasz gotowych rozwiązań, ale chcesz poszukać odpowiedzi w swoim wnętrzu - <bold>to może być przestrzeń dla Ciebie!</bold></text><p>Moje podejście zakłada wiarę w to, że wszystkie odpowiedzi, możliwości i zasoby są w nas. Czasem potrzebujemy tylko kogoś obok, kto pomoże nam zobaczyć coś z innej, otwierającej nowe możliwości perspektywy. Jeśli chcesz wziąć odpowiedzialność za swoje życie - <bold>zapraszam!</bold></p></div>"
+      },
+      "format": {
+        "title": "Format sesji",
+        "description": "<div><ul><li>Online</li><li>Stacjonarnie</li></ul><text><italic>dotyczy sesji indywidualnych i dla par</italic></text></div>"
+      }
+    },
     "workshops": {
       "title": "Warsztaty",
       "description": "Szkolenia i warsztaty rozwojowe na zamówienie.\nKierowane dla różnych grup (małżonków, dorosłych, młodzieży, duchownych).\nCLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia.",

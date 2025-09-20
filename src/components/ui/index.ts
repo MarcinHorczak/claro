@@ -4,3 +4,6 @@ export * from "./dropdown-menu";
 export * from "./collapsible";
 export * from "./input";
 export * from "./textarea";
+export * from "./card";
+export * from "./badge";
+export * from "./scroll-area";

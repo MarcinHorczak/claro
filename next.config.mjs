@@ -4,9 +4,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   reactStrictMode: true,
-  images: { unoptimized: true },
+  images: {
+    domains: [process.env.NEXT_PUBLIC_SUPABASE_URL?.split("//")[1]],
+  },
 };
 
 export default withNextIntl(nextConfig);

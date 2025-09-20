@@ -1,0 +1,1 @@
+export { WorkshopsList } from "./WorkshopsList";
