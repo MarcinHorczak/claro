@@ -24,23 +24,23 @@
     "shortDescription": "<b>CLARO</b> - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.",
     "c": {
       "title": "Chrześcijańskie",
-      "description": "<p>W swojej pracy opieramy się na chrześcijańskiej wizji człowieka. Bazujemy na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy.</p>"
+      "description": "<p>W swojej pracy opieram się na chrześcijańskiej wizji człowieka. Bazuję na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy.</p>"
     },
     "l": {
       "title": "Laboratorium",
-      "description": "<p>W warunkach pełnego zaufania i poczucia bezpieczeństwa chcemy pochylać się z troską nad każdą osobą. Towarzyszymy w procesie prób i błędów. Tworzymy narzędzia, by wydobywać, badać, rozeznawać a później pielęgnować i troszczyć się o wzrost tego, co najbardziej życiodajne.</p>"
+      "description": "<p>W warunkach pełnego zaufania i poczucia bezpieczeństwa chcę uznawać wyjątkowość każdej osoby. Towarzyszę w procesie prób i błędów. Dobieram narzędzia tak, by wydobywać, badać, rozeznawać a później pielęgnować i troszczyć się o wzrost tego, co najbardziej życiodajne.</p>"
     },
     "a": {
       "title": "Aktywnego",
-      "description": "<p>Tworzymy przestrzeń zaangażowania, która wprowadza w dynamiczny proces zmiany. Formy warsztatowe sprzyjają wyjściu z bierności i impasu, motywują do ruchu w stronę życia!</p>"
+      "description": "<p>Tworzę przestrzeń zaangażowania, która wprowadza w dynamiczny proces zmiany. Formy warsztatowe sprzyjają wyjściu z bierności i impasu, motywują do ruchu w stronę życia!</p>"
     },
     "r": {
       "title": "Rozwoju",
-      "description": "<p>Miłość zawsze zaprasza do rozwoju czyli do docierania do głębi swojego „Ja”. Tam możemy spotkać Prawdę i Życie. Im bardziej się rozwijamy - tym bardziej stajemy się sobą. Zaczynamy żyć w wolności, pokoju i twórczej harmonii ze sobą, drugim człowiekiem i Bogiem.</p><p>Chcemy patrzeć na siebie holistycznie -  rozwijać sferę ciała, psychiki i ducha.</p>"
+      "description": "<p>Miłości zawsze towarzyszy rozwój czyli docieranie do głębi swojego „Ja”. Tam możemy spotkać Prawdę i Życie. Im bardziej się rozwijamy - tym bardziej stajemy się sobą. Zaczynamy żyć w wolności, pokoju i twórczej harmonii ze sobą, drugim człowiekiem i Bogiem. </p><p>Chcę patrzeć na każdą osobę holistycznie -  zapraszać do rozwoju w sferze świadomości ciała, psychiki i ducha.</p>"
     },
     "o": {
       "title": "Osobowego",
-      "description": "<p>Rozwój osobowy różni się od osobistego tym, że nie kończy się na sobie. Potrzebujemy poznawać, pokochać i troszczyć się o siebie. Jesteśmy bardzo ważni! Jest to punkt wyjścia do tego, by umieć prawdziwie kochać Boga i drugiego człowieka. Zostaliśmy bezgranicznie pokochani, żeby tę miłość celebrować i przekazywać dalej. Osoba jest stworzona do relacji i o jakość tych relacji ze sobą, innymi i Bogiem chcemy się zatroszczyć.</p>"
+      "description": "<p>Rozwój osobowy różni się od osobistego tym, że nie kończy się na sobie. Potrzebujemy poznawać, pokochać i zatroszczyć się o siebie. Jesteśmy bardzo ważni! Jest to punkt wyjścia do tego, by umieć prawdziwie kochać drugiego człowieka. Zostaliśmy bezgranicznie pokochani, żeby tę miłość przyjmować, celebrować i przekazywać dalej. Jesteśmy stworzeni do relacji i o jakość tych relacji ze sobą, innymi i Bogiem chcemy się w CLARO zatroszczyć.</p>"
     },
     "contactWithUs": "Skontaktuj się",
     "contact": "Kontakt"
@@ -54,7 +54,7 @@
       "life": {
         "title": "Life Coaching",
         "subtitle": "Sesje indywidualne",
-        "description": "<p>Life Coaching obejmuje sesje indywidualne. Skupia się na tematach życiowych: celach prywatnych, relacjach, związkach, rozwoju osobistym, poznaniu siebie, wyborze drogi/misji życiowej, planach na przyszłość, pracy na przekonaniach, zasobach, przechodzeniu przez kryzys.</p><p>Life Coaching z założenia jest szybkim i dającym długotrwałe efekty procesem. Profesjonalny coaching indywidualny prowadzony jest w taki sposób, by klient po 6-10 spotkaniach mógł działać samodzielnie, korzystając z efektów przebytych sesji, według uśrednionych standardów etycznych Coacha np. ICC, ICF, IC czy wg programów nauczania zatwierdzonych przez MEN.</p>"
+        "description": "<p>Life Coaching obejmuje sesje indywidualne. Skupia się na tematach życiowych: celach prywatnych, relacjach, związkach, rozwoju osobistym, poznaniu siebie, wyborze drogi/misji życiowej, planach na przyszłość, pracy na przekonaniach, zasobach, przechodzeniu przez kryzys/impas.</p><p>Life Coaching z założenia jest szybkim i dającym długotrwałe efekty procesem. Profesjonalny coaching indywidualny prowadzony jest w taki sposób, by klient po 6-10 spotkaniach mógł działać samodzielnie, korzystając z efektów przebytych sesji, według uśrednionych standardów etycznych Coacha np. ICC, ICF, IC czy wg programów nauczania zatwierdzonych przez MEN.</p>"
       },
       "relationship": {
         "title": "Coaching Relacji",
@@ -72,7 +72,7 @@
     },
     "workshops": {
       "title": "Warsztaty",
-      "description": "Szkolenia i warsztaty rozwojowe na zamówienie.\nKierowane dla różnych grup (małżonków, dorosłych, młodzieży, duchownych).\nCLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia.",
+      "description": "Szkolenia i warsztaty rozwojowe również na zamówienie.\nKierowane do różnych grup (małżonków, dorosłych, młodzieży, duchownych).\nCLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia.",
       "offers": {
         "title": "Aktualne propozycje warsztatów",
         "description": "Odkryj propozycje warsztatów, które towarzyszą w rozwoju"
