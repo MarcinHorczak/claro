@@ -66,12 +66,13 @@
         "description": "<div><ul><li>Trudno Ci zaakceptować i pokochać siebie</li><li>Widzisz wyzwania w relacji ze sobą, innymi i Bogiem</li><li>Doświadczasz kryzysu w życiu, powołaniu</li><li>Szukasz harmonii i poczucia sensu</li><li>Chcesz poznawać siebie i świadomie kierować swoim życiem</li><li>Chcesz rozwijać w sobie sferę psychiczną i duchową</li><li>Chcesz poznawać swoje emocje i twórczo nimi zarządzać</li></ul><text>i do tego nie szukasz gotowych rozwiązań, ale chcesz poszukać odpowiedzi w swoim wnętrzu - <bold>to może być przestrzeń dla Ciebie!</bold></text><p>Moje podejście zakłada wiarę w to, że wszystkie odpowiedzi, możliwości i zasoby są w nas. Czasem potrzebujemy tylko kogoś obok, kto pomoże nam zobaczyć coś z innej, otwierającej nowe możliwości perspektywy. Jeśli chcesz wziąć odpowiedzialność za swoje życie - <bold>zapraszam!</bold></p></div>"
       },
       "format": {
-        "title": "Format sesji",
-        "description": "<div><ul><li>Online</li><li>Stacjonarnie</li></ul><text><italic>dotyczy sesji indywidualnych i dla par</italic></text></div>"
+        "title": "Spotkania mogą odbywać się:",
+        "description": "<div><ul><li>Online</li><li><text>Stacjonarnie <italic>(Tychy/Katowice)</italic></text></li></ul><text></text></div>"
       }
     },
     "workshops": {
       "title": "Warsztaty",
+      "subtitle": "Stacjonarnie/online",
       "description": "Szkolenia i warsztaty rozwojowe również na zamówienie.\nKierowane do różnych grup (małżonków, dorosłych, młodzieży, duchownych).\nCLARO świetnie odnajduje się w byciu częścią większych przedsięwzięć: rekolekcji, konferencji, dni skupienia.",
       "offers": {
         "title": "Aktualne propozycje warsztatów",

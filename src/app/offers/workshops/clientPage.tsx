@@ -27,9 +27,12 @@ const WorkshopsClient = ({ workshops }: { workshops: Workshop[] }) => {
       <div className="flex flex-col gap-16 py-16">
         <ContentContainer>
           <div className="flex flex-col gap-3 px-4 md:text-center">
-            <h1 className="font-header text-3xl font-bold text-primary">
-              {t("offers.workshops.title")}
-            </h1>
+            <div className="flex flex-col gap-1">
+              <h1 className="font-header text-3xl font-bold text-primary">
+                {t("offers.workshops.title")}
+              </h1>
+              <i className="text-primary">{t("offers.workshops.subtitle")}</i>
+            </div>
             <p className="text-md whitespace-pre-wrap text-muted-foreground">
               {t("offers.workshops.description")}
             </p>
