@@ -9,7 +9,7 @@ export const ClaroLetters = ({ letterIndex }: ClaroLettersProps) => (
     {CLARO.split("").map((letter, index) => (
       <p
         key={index}
-        className={`text-[0.75rem] ${index === letterIndex ? "font-bold text-primary" : ""}`}
+        className={`text-[0.75rem] ${index === letterIndex ? "font-bold text-primary" : "text-slate-400"}`}
       >
         {letter}
       </p>

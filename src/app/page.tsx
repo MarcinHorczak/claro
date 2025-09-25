@@ -1,25 +1,19 @@
-import { useTranslations } from "next-intl";
-import { ContentContainer, HomeSections } from "@components/custom";
+import { getTranslations } from "next-intl/server";
+import { HomeClient } from "./clientPage";
 
-const Home = () => {
-  const t = useTranslations();
+export const generateMetadata = async () => {
+  const t = await getTranslations();
 
-  return (
-    <div>
-      <ContentContainer>
-        <div className="flex h-screen items-center p-14">
-          <h1 className="font-header text-center font-normal">
-            {t.rich("home.shortDescription", {
-              b: (chunks) => (
-                <span className="tracking-widest text-primary">{chunks}</span>
-              ),
-            })}
-          </h1>
-        </div>
-      </ContentContainer>
-      <HomeSections />
-    </div>
-  );
+  return {
+    title: t("meta.pages.home.title"),
+    description: t("meta.pages.home.description"),
+    openGraph: {
+      title: t("meta.pages.home.title"),
+      description: t("meta.pages.home.description"),
+    },
+  };
 };
+
+const Home = () => <HomeClient />;
 
 export default Home;

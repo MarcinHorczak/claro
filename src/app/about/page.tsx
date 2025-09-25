@@ -1,6 +1,28 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { ContentContainer, HeaderSpacer } from "@components/custom";
 import AboutImage from "/public/images/ula.webp";
+
+export async function generateMetadata() {
+  const t = await getTranslations();
+
+  return {
+    title: t("meta.pages.about.title"),
+    description: t("meta.pages.about.description"),
+    openGraph: {
+      title: t("meta.pages.about.title"),
+      description: t("meta.pages.about.description"),
+      images: [
+        {
+          url: AboutImage.src,
+          width: 800,
+          height: 600,
+          alt: t("about.name"),
+        },
+      ],
+    },
+  };
+}
 
 const About = () => {
   const t = useTranslations();
@@ -18,17 +40,17 @@ const About = () => {
               <div
                 className={`h-80 w-80 rounded-full ${imageClasses}`}
                 style={imageStyle}
+                role="img"
+                aria-label={t("about.name")}
               />
             </div>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h1 className="mb-6 text-center text-2xl font-bold text-primary">
                 {t("about.name")}
               </h1>
               {t.rich("about.description", {
                 p: (chunks) => (
-                  <p className="text-justify indent-8 text-base leading-relaxed">
-                    {chunks}
-                  </p>
+                  <p className="text-base leading-relaxed">{chunks}</p>
                 ),
               })}
             </div>
@@ -39,6 +61,8 @@ const About = () => {
               <div
                 className={`h-[500px] w-[400px] rounded-3xl ${imageClasses}`}
                 style={imageStyle}
+                role="img"
+                aria-label={t("about.name")}
               />
             </div>
             <div className="flex flex-col">

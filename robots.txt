@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://clarorozwoj.pl/sitemap.xml
+
+# Disallow crawling of admin areas (if any in future)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow crawling of images
+Allow: /images/
+Allow: /public/
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1

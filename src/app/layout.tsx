@@ -5,20 +5,94 @@ import { Toaster } from "sonner";
 import { Footer, Header, NoSSRWrapper } from "@components/custom";
 import "../globals.css";
 
-export async function generateMetadata() {
+const BASE_URL = "https://clarorozwoj.pl";
+
+export const generateMetadata = async () => {
   const t = await getTranslations();
 
-  return {
-    title: t("meta.title"),
-    description: t("meta.description"),
+  const organizationStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    url: BASE_URL,
+    telephone: "+48519770996",
+    email: "claro.rozwoj@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Imielin",
+      addressRegion: "Śląskie",
+      addressCountry: "PL",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "50.1453400",
+      longitude: "19.1859900",
+    },
+    priceRange: "$$$",
+    name: t("structuredData.organization.name"),
+    alternateName: t("structuredData.organization.alternateName"),
+    description: t("structuredData.organization.description"),
+    founder: {
+      "@type": "Person",
+      name: t("structuredData.organization.founder.name"),
+      jobTitle: t("structuredData.organization.founder.jobTitle"),
+      alumniOf: t("structuredData.organization.founder.alumniOf"),
+    },
+    areaServed: {
+      "@type": "Place",
+      name: t("structuredData.organization.areaServed"),
+    },
+    serviceType: t("structuredData.organization.serviceTypes"),
   };
-}
 
-const RootLayout = async ({
-  children,
-}: Readonly<{
-  children: ReactNode;
-}>) => {
+  return {
+    title: { default: t("meta.title"), template: "%s | CLARO" },
+    description: t("meta.description"),
+    keywords: t("meta.keywords"),
+    authors: [{ name: t("meta.author") }],
+    creator: t("meta.author"),
+    publisher: t("meta.author"),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: "pl_PL",
+      url: BASE_URL,
+      siteName: "CLARO",
+      title: t("meta.title"),
+      description: t("meta.description"),
+      images: [
+        {
+          url: "/images/ula.webp",
+          width: 1200,
+          height: 630,
+          alt: t("meta.title"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("meta.title"),
+      description: t("meta.description"),
+      images: ["/images/ula.webp"],
+    },
+    verification: { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION },
+    alternates: { canonical: BASE_URL },
+    other: {
+      "application/ld+json": JSON.stringify(organizationStructuredData),
+    },
+  };
+};
+
+const RootLayout = async ({ children }: Readonly<{ children: ReactNode }>) => {
   const locale = await getLocale();
   const messages = await getMessages();
 

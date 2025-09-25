@@ -2,8 +2,50 @@
   "name": "CLARO",
   "underConstruction": "Strona w budowie",
   "meta": {
-    "title": "CLARO | Urszula Horczak",
-    "description": "Claro"
+    "title": "CLARO - Coaching i Warsztaty Rozwojowe | Urszula Horczak",
+    "description": "CLARO - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Coaching indywidualny, coaching relacji i warsztaty rozwojowe. Urszula Horczak - certyfikowany coach.",
+    "keywords": "coaching, warsztaty rozwojowe, rozwój osobowy, coaching relacji, life coaching, Urszula Horczak, CLARO, coaching chrześcijański",
+    "author": "Urszula Horczak",
+    "pages": {
+      "home": {
+        "title": "CLARO - Urszula Horczak",
+        "description": "CLARO to Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Oferujemy coaching indywidualny, coaching relacji i warsztaty rozwojowe dla osób pragnących rozwoju duchowego i osobowego."
+      },
+      "about": {
+        "title": "O mnie | CLARO - Urszula Horczak",
+        "description": "Poznaj Urszulę Horczak - certyfikowanego coacha i trenera TUS. Absolwentka Doradztwa Filozoficznego i Coachingu oraz Teologii Duchowości na Uniwersytecie Śląskim."
+      },
+      "contact": {
+        "title": "Kontakt | CLARO - Urszula Horczak",
+        "description": "Skontaktuj się z CLARO i umów spotkanie coachingowe. Oferujemy sesje online i stacjonarne w Tychach i Katowicach. Zadzwoń: +48 519 770 996"
+      },
+      "coaching": {
+        "title": "Coaching | CLARO - Urszula Horczak",
+        "description": "Profesjonalny coaching indywidualny (Life Coaching) i coaching relacji dla par, małżeństw i narzeczonych. Sesje online i stacjonarne w Tychach/Katowicach."
+      },
+      "workshops": {
+        "title": "Warsztaty | CLARO - Urszula Horczak",
+        "description": "Warsztaty rozwojowe CLARO: komunikacja, rozwiązywanie konfliktów, emocje, duchowość. Dla grup, małżeństw, młodzieży i duchownych. Stacjonarnie i online."
+      }
+    }
+  },
+  "structuredData": {
+    "organization": {
+      "name": "CLARO - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego",
+      "alternateName": "CLARO Coaching",
+      "description": "CLARO - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Coaching indywidualny, coaching relacji i warsztaty rozwojowe. Urszula Horczak - certyfikowany coach.",
+      "founder": {
+        "name": "Urszula Horczak",
+        "jobTitle": "Coach, Trener TUS",
+        "alumniOf": "Uniwersytet Śląski"
+      },
+      "areaServed": "Polska",
+      "serviceTypes": [
+        "Life Coaching",
+        "Coaching Relacji",
+        "Warsztaty Rozwojowe"
+      ]
+    }
   },
   "navigation": {
     "home": "Strona główna",
@@ -21,7 +63,7 @@
     "copyright": "© {year} CLARO"
   },
   "home": {
-    "shortDescription": "<b>CLARO</b> - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.",
+    "shortDescription": "<h1>CLARO</h1><p>Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Jego misją jest wspieranie chrześcijan w budowaniu zdrowych i życiodajnych relacji ze sobą, drugim człowiekiem i Bogiem.</p>",
     "c": {
       "title": "Chrześcijańskie",
       "description": "<p>W swojej pracy opieram się na chrześcijańskiej wizji człowieka. Bazuję na fides et ratio - wierze i rozumie, które wzajemnie się uzupełniają i prowadzą do prawdy.</p>"
@@ -107,5 +149,21 @@
   "notFound": {
     "description": "Strona, której szukasz, nie istnieje.",
     "backToHome": "Wróć do strony głównej"
+  },
+  "images": {
+    "alt": {
+      "logo": "CLARO - Logo Chrześcijańskiego Laboratorium Aktywnego Rozwoju Osobowego",
+      "ula": "Urszula Horczak - Założycielka CLARO, Coach i Trener TUS",
+      "lifeCoaching": "Life Coaching - Sesje indywidualne rozwoju osobowego",
+      "relationshipCoaching": "Coaching Relacji - Wsparcie dla par i małżeństw",
+      "workshops": "Warsztaty rozwojowe CLARO - Grupowe sesje rozwoju osobowego",
+      "home": {
+        "active": "Aktywny rozwój osobowy - Dynamiczny proces zmiany",
+        "bible": "Podstawy chrześcijańskie - Wiara i rozum w rozwoju",
+        "deep": "Głęboki rozwój duchowy - Poznawanie prawdy o sobie",
+        "grow": "Wzrost i rozwój - Droga do autentycznego życia",
+        "hands": "Wsparcie w rozwoju - Towarzyszenie w procesie zmiany"
+      }
+    }
   }
 }
