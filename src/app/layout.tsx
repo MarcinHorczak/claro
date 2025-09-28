@@ -4,6 +4,7 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Toaster } from "sonner";
 import { Footer, Header, NoSSRWrapper } from "@components/custom";
 import "../globals.css";
+import UlaImage from "/public/images/ula.webp";
 
 const BASE_URL = "https://clarorozwoj.pl";
 
@@ -41,12 +42,15 @@ export const generateMetadata = async () => {
       "@type": "Place",
       name: t("structuredData.organization.areaServed"),
     },
-    serviceType: t("structuredData.organization.serviceTypes"),
+    serviceType: [
+      t("structuredData.organization.serviceTypes.0"),
+      t("structuredData.organization.serviceTypes.1"),
+      t("structuredData.organization.serviceTypes.2"),
+    ],
   };
 
   return {
-    title: { default: t("meta.title"), template: "%s | CLARO" },
-    description: t("meta.description"),
+    title: { default: t("meta.title"), template: `%s | ${t("meta.title")}` },
     keywords: t("meta.keywords"),
     authors: [{ name: t("meta.author") }],
     creator: t("meta.author"),
@@ -68,10 +72,9 @@ export const generateMetadata = async () => {
       url: BASE_URL,
       siteName: "CLARO",
       title: t("meta.title"),
-      description: t("meta.description"),
       images: [
         {
-          url: "/images/ula.webp",
+          url: UlaImage.src,
           width: 1200,
           height: 630,
           alt: t("meta.title"),
@@ -81,8 +84,7 @@ export const generateMetadata = async () => {
     twitter: {
       card: "summary_large_image",
       title: t("meta.title"),
-      description: t("meta.description"),
-      images: ["/images/ula.webp"],
+      images: [UlaImage.src],
     },
     verification: { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION },
     alternates: { canonical: BASE_URL },

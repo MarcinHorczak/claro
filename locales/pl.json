@@ -2,29 +2,27 @@
   "name": "CLARO",
   "underConstruction": "Strona w budowie",
   "meta": {
-    "title": "CLARO - Coaching i Warsztaty Rozwojowe | Urszula Horczak",
-    "description": "CLARO - Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Coaching indywidualny, coaching relacji i warsztaty rozwojowe. Urszula Horczak - certyfikowany coach.",
+    "title": "CLARO - Urszula Horczak",
     "keywords": "coaching, warsztaty rozwojowe, rozwój osobowy, coaching relacji, life coaching, Urszula Horczak, CLARO, coaching chrześcijański",
     "author": "Urszula Horczak",
     "pages": {
       "home": {
-        "title": "CLARO - Urszula Horczak",
         "description": "CLARO to Chrześcijańskie Laboratorium Aktywnego Rozwoju Osobowego. Oferujemy coaching indywidualny, coaching relacji i warsztaty rozwojowe dla osób pragnących rozwoju duchowego i osobowego."
       },
       "about": {
-        "title": "O mnie | CLARO - Urszula Horczak",
-        "description": "Poznaj Urszulę Horczak - certyfikowanego coacha i trenera TUS. Absolwentka Doradztwa Filozoficznego i Coachingu oraz Teologii Duchowości na Uniwersytecie Śląskim."
+        "title": "O mnie",
+        "description": "Urszula Horczak - coach i trener TUS. Absolwentka Doradztwa Filozoficznego i Coachingu oraz Teologii Duchowości na Uniwersytecie Śląskim."
       },
       "contact": {
-        "title": "Kontakt | CLARO - Urszula Horczak",
+        "title": "Kontakt",
         "description": "Skontaktuj się z CLARO i umów spotkanie coachingowe. Oferujemy sesje online i stacjonarne w Tychach i Katowicach. Zadzwoń: +48 519 770 996"
       },
       "coaching": {
-        "title": "Coaching | CLARO - Urszula Horczak",
+        "title": "Coaching",
         "description": "Profesjonalny coaching indywidualny (Life Coaching) i coaching relacji dla par, małżeństw i narzeczonych. Sesje online i stacjonarne w Tychach/Katowicach."
       },
       "workshops": {
-        "title": "Warsztaty | CLARO - Urszula Horczak",
+        "title": "Warsztaty",
         "description": "Warsztaty rozwojowe CLARO: komunikacja, rozwiązywanie konfliktów, emocje, duchowość. Dla grup, małżeństw, młodzieży i duchownych. Stacjonarnie i online."
       }
     }
@@ -40,11 +38,11 @@
         "alumniOf": "Uniwersytet Śląski"
       },
       "areaServed": "Polska",
-      "serviceTypes": [
-        "Life Coaching",
-        "Coaching Relacji",
-        "Warsztaty Rozwojowe"
-      ]
+      "serviceTypes": {
+        "0": "Life Coaching",
+        "1": "Coaching Relacji",
+        "2": "Warsztaty Rozwojowe"
+      }
     }
   },
   "navigation": {
