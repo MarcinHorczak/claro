@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
@@ -91,6 +92,7 @@ const RootLayout = async ({ children }: Readonly<{ children: ReactNode }>) => {
           </NextIntlClientProvider>
         </NoSSRWrapper>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
