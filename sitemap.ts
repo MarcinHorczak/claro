@@ -1,10 +1,9 @@
 import { MetadataRoute } from "next";
-import { getWorkshops } from "@utils/db/client";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://clarorozwoj.pl";
 
-  const { data: workshops } = await getWorkshops();
+  // const { data: workshops } = await getWorkshops();
 
   const staticPages = [
     {
@@ -39,12 +38,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  const workshopPages = (workshops || []).map((workshop) => ({
-    url: `${baseUrl}/offers/workshops/${workshop.key}`,
-    lastModified: new Date(workshop.created_at),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
+  // const workshopPages = (workshops || []).map((workshop) => ({
+  //   url: `${baseUrl}/offers/workshops/${workshop.key}`,
+  //   lastModified: new Date(workshop.created_at),
+  //   changeFrequency: "weekly" as const,
+  //   priority: 0.7,
+  // }));
 
-  return [...staticPages, ...workshopPages];
+  return [...staticPages];
 }
