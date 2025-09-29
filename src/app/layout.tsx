@@ -15,6 +15,8 @@ export const generateMetadata = async () => {
   const organizationStructuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    name: "CLARO - Urszula Horczak",
+    description: t("meta.description"),
     url: BASE_URL,
     telephone: "+48519770996",
     email: "claro.rozwoj@gmail.com",
@@ -24,30 +26,7 @@ export const generateMetadata = async () => {
       addressRegion: "Śląskie",
       addressCountry: "PL",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "50.1453400",
-      longitude: "19.1859900",
-    },
-    priceRange: "$$$",
-    name: t("structuredData.organization.name"),
-    alternateName: t("structuredData.organization.alternateName"),
-    description: t("structuredData.organization.description"),
-    founder: {
-      "@type": "Person",
-      name: t("structuredData.organization.founder.name"),
-      jobTitle: t("structuredData.organization.founder.jobTitle"),
-      alumniOf: t("structuredData.organization.founder.alumniOf"),
-    },
-    areaServed: {
-      "@type": "Place",
-      name: t("structuredData.organization.areaServed"),
-    },
-    serviceType: [
-      t("structuredData.organization.serviceTypes.0"),
-      t("structuredData.organization.serviceTypes.1"),
-      t("structuredData.organization.serviceTypes.2"),
-    ],
+    serviceType: ["Life Coaching", "Coaching Relacji", "Warsztaty Rozwojowe"],
   };
 
   return {
@@ -72,19 +51,15 @@ export const generateMetadata = async () => {
       locale: "pl_PL",
       url: BASE_URL,
       siteName: "CLARO",
-      title: t("meta.title"),
       images: [
         {
           url: UlaImage.src,
-          width: 1200,
-          height: 630,
           alt: t("meta.title"),
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: t("meta.title"),
       images: [UlaImage.src],
     },
     verification: { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION },

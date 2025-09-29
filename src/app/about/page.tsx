@@ -9,18 +9,6 @@ export async function generateMetadata() {
   return {
     title: t("meta.pages.about.title"),
     description: t("meta.pages.about.description"),
-    openGraph: {
-      title: t("meta.pages.about.title"),
-      description: t("meta.pages.about.description"),
-      images: [
-        {
-          url: AboutImage.src,
-          width: 800,
-          height: 600,
-          alt: t("about.name"),
-        },
-      ],
-    },
   };
 }
 

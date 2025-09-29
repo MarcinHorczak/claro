@@ -4,12 +4,7 @@ import { HomeClient } from "./clientPage";
 export const generateMetadata = async () => {
   const t = await getTranslations();
 
-  return {
-    description: t("meta.pages.home.description"),
-    openGraph: {
-      description: t("meta.pages.home.description"),
-    },
-  };
+  return { description: t("meta.pages.home.description") };
 };
 
 const Home = () => <HomeClient />;

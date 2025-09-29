@@ -7,10 +7,6 @@ export const generateMetadata = async () => {
   return {
     title: t("meta.pages.contact.title"),
     description: t("meta.pages.contact.description"),
-    openGraph: {
-      title: t("meta.pages.contact.title"),
-      description: t("meta.pages.contact.description"),
-    },
   };
 };
 

@@ -8,10 +8,6 @@ export async function generateMetadata() {
   return {
     title: t("meta.pages.workshops.title"),
     description: t("meta.pages.workshops.description"),
-    openGraph: {
-      title: t("meta.pages.workshops.title"),
-      description: t("meta.pages.workshops.description"),
-    },
   };
 }
 
