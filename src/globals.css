@@ -35,10 +35,15 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground box-border inline-block h-screen w-full antialiased;
+    @apply box-border inline-block h-screen w-full bg-background text-foreground antialiased;
   }
-  .font-header {
-    @apply text-[1rem] font-bold md:text-[1.5rem] lg:text-[1.75rem] xl:text-[1.75rem];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-rendering: optimizeLegibility;
   }
 }
 

@@ -19,7 +19,7 @@ export const NavigationElement = ({
     return (
       <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
-          <div className="w-auto cursor-pointer rounded-lg border transition-all duration-300 ease-in-out hover:bg-primary hover:text-primary-foreground">
+          <div className="w-auto cursor-pointer rounded-lg border border-primary text-primary transition-all duration-300 ease-in-out hover:bg-primary hover:text-primary-foreground">
             <label className="flex h-full items-center gap-2 px-6 py-2 hover:cursor-pointer">
               {name}
               <ChevronDown size={16} />
@@ -31,7 +31,7 @@ export const NavigationElement = ({
             <DropdownMenuItem
               key={index}
               asChild
-              className="focus:bg-primary focus:text-primary-foreground data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground"
+              className="text-primary focus:bg-primary focus:text-primary-foreground data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground"
             >
               <Link href={option.href} className="w-full hover:cursor-pointer">
                 {option.name}
@@ -45,7 +45,7 @@ export const NavigationElement = ({
 
   return (
     <Link href={href}>
-      <div className="w-auto rounded-lg border transition-all duration-300 ease-in-out hover:bg-primary hover:text-primary-foreground">
+      <div className="w-auto rounded-lg border border-primary text-primary transition-all duration-300 ease-in-out hover:bg-primary hover:text-primary-foreground">
         <label className="flex h-full px-6 py-2 hover:cursor-pointer">
           {name}
         </label>

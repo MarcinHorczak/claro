@@ -52,7 +52,12 @@ export const Section = ({
             </div>
           </div>
         </div>
-        <div className="hidden md:flex md:flex-1 md:items-center md:gap-5">
+        <div
+          className="hidden md:flex md:flex-1 md:items-center md:gap-5"
+          style={{
+            flexDirection: sectionIndex % 2 === 0 ? "row" : "row-reverse",
+          }}
+        >
           <div className="flex-1 px-14 py-52">
             <TextBlock sectionIndex={sectionIndex} {...textContent} />
           </div>

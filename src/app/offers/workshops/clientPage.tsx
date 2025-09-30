@@ -3,10 +3,11 @@
 import { useTranslations } from "next-intl";
 import {
   ContentContainer,
-  HeaderSpacer,
   InfoCard,
+  PageContainer,
   WorkshopsList,
 } from "@components/custom";
+import { Heading } from "@components/ui";
 import { useBreakpoint } from "@utils";
 import { Workshop } from "@utils/db/client/workshops/workshops.types";
 import { PolygonVariant } from "@utils/enums";
@@ -18,19 +19,13 @@ const WorkshopsClient = ({ workshops }: { workshops: Workshop[] }) => {
 
   const workshopsInfo = useWorkshopsInfo();
 
-  // TODO: replace with workshops when they are ready
-  const workshopList = [];
-
   return (
-    <div>
-      <HeaderSpacer />
+    <PageContainer>
       <div className="flex flex-col gap-16 py-16">
         <ContentContainer>
           <div className="flex flex-col gap-3 px-4 md:text-center">
             <div className="flex flex-col gap-1">
-              <h1 className="font-header text-3xl font-bold text-primary">
-                {t("offers.workshops.title")}
-              </h1>
+              <Heading>{t("offers.workshops.title")}</Heading>
               <i className="text-primary">{t("offers.workshops.subtitle")}</i>
             </div>
             <p className="text-md whitespace-pre-wrap text-muted-foreground">
@@ -38,7 +33,7 @@ const WorkshopsClient = ({ workshops }: { workshops: Workshop[] }) => {
             </p>
           </div>
         </ContentContainer>
-        {workshopList.length > 0 && (
+        {[].length > 0 && (
           <ContentContainer
             bgColor="bg-orange-100"
             polygonVariants={[
@@ -85,7 +80,7 @@ const WorkshopsClient = ({ workshops }: { workshops: Workshop[] }) => {
           </div>
         </ContentContainer>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

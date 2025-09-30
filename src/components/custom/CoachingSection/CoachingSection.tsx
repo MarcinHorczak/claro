@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
-import { Card, CardContent } from "@components/ui";
+import { Card, CardContent, Heading } from "@components/ui";
 import { useBreakpoint } from "@utils";
 import { PolygonVariant } from "@utils/enums";
 import { ContentContainer } from "../ContentContainer";
@@ -30,8 +30,8 @@ export const CoachingSection = ({
   return (
     <ContentContainer bgColor={bgColor} polygonVariants={polygonVariants}>
       <div className="space-y-8 py-8 lg:py-16">
-        <div className="text-center">
-          <h2 className="mb-4 text-3xl font-bold text-primary">{title}</h2>
+        <div className="px-4 md:text-center">
+          <Heading className="mb-2 md:mb-4">{title}</Heading>
           <p className="text-base text-muted-foreground">{subtitle}</p>
         </div>
         <div

@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import {
   CoachingSection,
   ContentContainer,
-  HeaderSpacer,
   InfoCard,
+  PageContainer,
 } from "@components/custom";
 import { PolygonVariant } from "@utils/enums";
 import LifeCoachingImage from "/public/images/session-1.webp";
@@ -15,8 +15,7 @@ export const CoachingClient = () => {
   const t = useTranslations();
 
   return (
-    <div>
-      <HeaderSpacer />
+    <PageContainer>
       <CoachingSection
         title={t("offers.coaching.life.title")}
         subtitle={t("offers.coaching.life.subtitle")}
@@ -46,6 +45,6 @@ export const CoachingClient = () => {
           </div>
         </div>
       </ContentContainer>
-    </div>
+    </PageContainer>
   );
 };

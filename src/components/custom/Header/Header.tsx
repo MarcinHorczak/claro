@@ -8,11 +8,13 @@ export const Header = () => {
   const [{ y }] = useWindowScroll();
   const isScrolled = !!y && y > 0;
 
-  const scrolledStyles = isScrolled ? "py-3 xl:py-1 shadow-lg" : "py-5 xl:py-3";
+  const scrolledStyles = isScrolled
+    ? "py-3 xl:py-1 shadow-lg bg-white/95 backdrop-blur-sm"
+    : "py-5 xl:py-3 bg-white/90 backdrop-blur-sm";
 
   return (
     <div
-      className={`duration-400 fixed z-50 flex w-full items-center justify-between bg-slate-100 px-10 transition-all ${scrolledStyles} xl:px-20`}
+      className={`duration-400 fixed z-50 flex w-full items-center justify-between px-10 transition-all ${scrolledStyles} border-b xl:px-20`}
     >
       <Logo />
       <Navigation />

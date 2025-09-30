@@ -17,7 +17,7 @@ export const generateMetadata = async () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "CLARO - Urszula Horczak",
-    description: t("meta.description"),
+    description: t("meta.pages.home.description"),
     url: BASE_URL,
     telephone: "+48519770996",
     email: "claro.rozwoj@gmail.com",
@@ -86,9 +86,11 @@ const RootLayout = async ({ children }: Readonly<{ children: ReactNode }>) => {
               duration={8000}
               closeButton
             />
-            <Header />
-            {children}
-            <Footer />
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <div className="flex-1">{children}</div>
+              <Footer />
+            </div>
           </NextIntlClientProvider>
         </NoSSRWrapper>
         <SpeedInsights />

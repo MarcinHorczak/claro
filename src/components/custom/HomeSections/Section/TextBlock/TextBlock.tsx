@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Heading, Text } from "@components/ui";
 import { ClaroLetters } from "./ClaroLetters";
 
 export const TextBlock = ({
@@ -13,14 +14,17 @@ export const TextBlock = ({
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="space-y-4">
       <ClaroLetters letterIndex={sectionIndex} />
-      <p className="font-header w-full font-bold text-primary">{t(titleKey)}</p>
-      {t.rich(descriptionKey, {
-        p: (chunks) => (
-          <p className="font-rwd w-full md:text-justify">{chunks}</p>
-        ),
-      })}
+      <Heading>{t(titleKey)}</Heading>
+      <div className="space-y-4">
+        {t.rich(descriptionKey, {
+          p: (chunks) => <Text>{chunks}</Text>,
+        })}
+      </div>
+      <div className="pt-4">
+        <div className="h-1 w-20 rounded-full bg-gradient-to-r from-primary to-orange-300" />
+      </div>
     </div>
   );
 };
