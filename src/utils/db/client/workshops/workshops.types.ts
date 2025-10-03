@@ -8,4 +8,5 @@ export type Workshop = {
   end_date?: string;
   key: string;
   short_description: string;
+  active: boolean;
 };

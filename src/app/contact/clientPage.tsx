@@ -19,7 +19,7 @@ export const ContactClient = () => {
   return (
     <PageContainer>
       <ContentContainer>
-        <div className="mx-auto max-w-2xl px-6 pb-32 pt-12 md:pt-14 xl:pt-20">
+        <div className="mx-auto max-w-2xl px-6">
           <div className="mb-10 flex flex-col gap-2">
             <Heading>{t("contact.title")}</Heading>
             <p className="md:text-md text-sm text-muted-foreground">

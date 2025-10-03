@@ -1,30 +1,27 @@
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import { Heading, Text } from "@components/ui";
 
 export const MarkdownPreview = ({ content }: { content: string }) => (
   <ReactMarkdown
     remarkPlugins={[remarkGfm]}
     rehypePlugins={[rehypeRaw]}
     components={{
-      h1: ({ children }) => (
-        <h1 className="mb-6 text-3xl font-bold text-primary">{children}</h1>
-      ),
+      h1: ({ children }) => <Heading className="pt-4">{children}</Heading>,
       h2: ({ children }) => (
-        <h2 className="mb-4 mt-8 text-2xl font-bold text-primary">
+        <Heading as="h2" className="pt-4">
           {children}
-        </h2>
+        </Heading>
       ),
       h3: ({ children }) => (
-        <h3 className="mb-3 mt-6 text-xl font-semibold text-primary">
+        <Heading as="h3" className="pt-4">
           {children}
-        </h3>
+        </Heading>
       ),
-      p: ({ children }) => (
-        <p className="mb-4 leading-relaxed text-gray-700">{children}</p>
-      ),
+      p: ({ children }) => <Text>{children}</Text>,
       ul: ({ children }) => (
-        <ul className="mb-4 list-inside list-disc space-y-2 text-gray-700">
+        <ul className="list-inside list-disc space-y-1 text-gray-700 marker:text-primary">
           {children}
         </ul>
       ),

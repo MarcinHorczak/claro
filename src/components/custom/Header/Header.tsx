@@ -9,7 +9,7 @@ export const Header = () => {
   const isScrolled = !!y && y > 0;
 
   const scrolledStyles = isScrolled
-    ? "py-3 xl:py-1 shadow-lg bg-white/95 backdrop-blur-sm"
+    ? "py-3 xl:py-1 shadow-lg bg-white/90 backdrop-blur-sm"
     : "py-5 xl:py-3 bg-white/90 backdrop-blur-sm";
 
   return (

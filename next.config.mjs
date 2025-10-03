@@ -11,6 +11,38 @@ const nextConfig = {
   },
   poweredByHeader: false,
   compress: true,
+  async rewrites() {
+    return [
+      {
+        source: "/o-mnie",
+        destination: "/about",
+      },
+      {
+        source: "/coaching",
+        destination: "/coaching",
+      },
+      {
+        source: "/warsztaty",
+        destination: "/workshops",
+      },
+      {
+        source: "/warsztaty/:path*",
+        destination: "/workshops/:path*",
+      },
+      {
+        source: "/spotkania",
+        destination: "/sessions",
+      },
+      {
+        source: "/spotkania/:path*",
+        destination: "/sessions/:path*",
+      },
+      {
+        source: "/kontakt",
+        destination: "/contact",
+      },
+    ];
+  },
   async headers() {
     return [
       {

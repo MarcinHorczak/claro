@@ -21,7 +21,7 @@ const WorkshopsClient = ({ workshops }: { workshops: Workshop[] }) => {
 
   return (
     <PageContainer>
-      <div className="flex flex-col gap-16 py-16">
+      <div className="flex flex-col gap-16">
         <ContentContainer>
           <div className="flex flex-col gap-3 px-4 md:text-center">
             <div className="flex flex-col gap-1">
@@ -33,7 +33,7 @@ const WorkshopsClient = ({ workshops }: { workshops: Workshop[] }) => {
             </p>
           </div>
         </ContentContainer>
-        {[].length > 0 && (
+        {workshops.length > 0 && (
           <ContentContainer
             bgColor="bg-orange-100"
             polygonVariants={[

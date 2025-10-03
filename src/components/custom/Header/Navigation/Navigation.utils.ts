@@ -25,6 +25,10 @@ export const useNavigationElements = (): NavigationElementProps[] => {
           name: t("navigation.offers.workshops"),
           href: Paths.Workshops,
         },
+        {
+          name: t("navigation.offers.sessions"),
+          href: Paths.Sessions,
+        },
       ],
     },
     {

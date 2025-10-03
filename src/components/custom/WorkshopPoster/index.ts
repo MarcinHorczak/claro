@@ -1,0 +1,1 @@
+export { WorkshopPoster } from "./WorkshopPoster";

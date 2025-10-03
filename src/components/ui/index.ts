@@ -8,4 +8,5 @@ export * from "./card";
 export * from "./badge";
 export * from "./scroll-area";
 export * from "./dialog";
+export * from "./select";
 export * from "./typography";

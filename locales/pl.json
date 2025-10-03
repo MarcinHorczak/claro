@@ -51,7 +51,8 @@
     "offers": {
       "title": "Oferta",
       "coaching": "Coaching",
-      "workshops": "Warsztaty"
+      "workshops": "Warsztaty",
+      "sessions": "Spotkania"
     },
     "contact": "Kontakt"
   },
@@ -134,6 +135,11 @@
     "workshop": {
       "backToWorkshops": "Powrót do warsztatów",
       "poster": "Plakat wydarzenia"
+    },
+    "sessions": {
+      "title": "Spotkania",
+      "subtitle": "Stacjonarnie",
+      "description": "Spotkania tematyczne z CLARO: relacje, rozwój osobisty, duchowość."
     }
   },
   "contact": {

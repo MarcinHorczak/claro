@@ -22,7 +22,7 @@ const About = () => {
   return (
     <PageContainer>
       <ContentContainer>
-        <div className="flex w-full justify-center pb-20 pt-12 md:pb-32 md:pt-16 xl:pt-24">
+        <div className="flex w-full justify-center">
           <div className="max-w-[1170px] px-6 md:px-10">
             <div className="flex flex-col gap-8 md:hidden">
               <div className="flex justify-center">
