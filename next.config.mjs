@@ -6,7 +6,12 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [process.env.NEXT_PUBLIC_SUPABASE_URL?.split("//")[1]],
+    domains: [
+      process.env.NEXT_PUBLIC_API_URL?.split("//")[1]?.split("/")[0],
+      process.env.NEXT_PUBLIC_API_URL?.split("//")[1]
+        ?.split("/")[0]
+        ?.replace("strapiapp.com", "media.strapiapp.com"),
+    ].filter(Boolean),
     formats: ["image/webp", "image/avif"],
   },
   poweredByHeader: false,
@@ -31,11 +36,11 @@ const nextConfig = {
       },
       {
         source: "/spotkania",
-        destination: "/sessions",
+        destination: "/meetings",
       },
       {
         source: "/spotkania/:path*",
-        destination: "/sessions/:path*",
+        destination: "/meetings/:path*",
       },
       {
         source: "/kontakt",

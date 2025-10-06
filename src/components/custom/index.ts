@@ -11,4 +11,4 @@ export { DateRangeBadge } from "./DateRangeBadge";
 export { CoachingSection } from "./CoachingSection";
 export { PageContainer } from "./PageContainer";
 export { WorkshopPoster } from "./WorkshopPoster";
-export { SessionsList } from "./SessionsList";
+export { MeetingsList } from "./MeetingsList";

@@ -29,7 +29,8 @@ export const Section = ({
 
   return (
     <ContentContainer
-      bgColor={sectionIndex % 2 === 0 ? "bg-orange-100" : "bg-white"}
+      compact
+      bgColor={sectionIndex % 2 === 0 ? "bg-orange-50" : "bg-blue-50"}
       polygonHeight={16}
       polygonVariants={
         isDesktop && polygonVariants && polygonVariants.length > 0

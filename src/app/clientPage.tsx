@@ -12,7 +12,7 @@ export const HomeClient = () => {
   const t = useTranslations();
 
   return (
-    <PageContainer noPadding>
+    <PageContainer noTopPadding noBottomPadding>
       <ContentContainer>
         <div className="px-4 py-16 md:px-14 md:py-32 md:text-center">
           {t.rich("home.shortDescription", {

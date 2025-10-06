@@ -15,7 +15,7 @@ export const CoachingClient = () => {
   const t = useTranslations();
 
   return (
-    <PageContainer noPadding>
+    <PageContainer noTopPadding noBottomPadding>
       <CoachingSection
         title={t("offers.coaching.life.title")}
         subtitle={t("offers.coaching.life.subtitle")}

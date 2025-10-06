@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { getWorkshops } from "@utils/db/client";
+import { EndpointName, Workshop, getData } from "@utils";
 import WorkshopsClient from "./clientPage";
 
 export async function generateMetadata() {
@@ -12,7 +12,10 @@ export async function generateMetadata() {
 }
 
 const Workshops = async () => {
-  const { data: workshops } = await getWorkshops();
+  const workshops = await getData<Workshop>(
+    EndpointName.Workshops,
+    "populate=image",
+  );
 
   return <WorkshopsClient workshops={workshops || []} />;
 };

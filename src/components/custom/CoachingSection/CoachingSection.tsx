@@ -29,7 +29,7 @@ export const CoachingSection = ({
 
   return (
     <ContentContainer bgColor={bgColor} polygonVariants={polygonVariants}>
-      <div className="space-y-8 py-8 lg:py-16">
+      <div className="space-y-8 py-12 lg:py-24">
         <div className="px-4 md:text-center">
           <Heading className="mb-2 md:mb-4">{title}</Heading>
           <p className="text-base text-muted-foreground">{subtitle}</p>

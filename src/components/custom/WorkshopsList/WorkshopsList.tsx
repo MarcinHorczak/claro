@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { ScrollArea } from "@components/ui";
-import { Workshop } from "@utils/db/client/workshops/workshops.types";
+import { Workshop } from "@utils";
 import { Paths } from "@utils/paths";
 import { Carousel } from "./Carousel";
 

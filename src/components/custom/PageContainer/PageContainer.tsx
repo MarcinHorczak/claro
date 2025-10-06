@@ -3,19 +3,22 @@ import { HeaderSpacer } from "./HeaderSpacer";
 
 interface PageContainerProps {
   children: ReactNode;
-  noPadding?: boolean;
+  noTopPadding?: boolean;
+  noBottomPadding?: boolean;
 }
 
 export const PageContainer = ({
   children,
-  noPadding = false,
+  noTopPadding = false,
+  noBottomPadding = false,
 }: PageContainerProps) => {
+  const topPadding = noTopPadding ? "" : "pt-16 md:pt-24";
+  const bottomPadding = noBottomPadding ? "" : "pb-16 md:pb-32";
+
   return (
     <div>
       <HeaderSpacer />
-      <div className={`${noPadding ? "" : "pb-16 pt-12 md:pb-32 md:pt-16"}`}>
-        {children}
-      </div>
+      <div className={`${topPadding} ${bottomPadding}`}>{children}</div>
     </div>
   );
 };

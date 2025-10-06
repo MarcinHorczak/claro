@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, MapPin, Users } from "lucide-react";
+import { MapPin, Users } from "lucide-react";
 import Link from "next/link";
 import {
   ContentContainer,
@@ -17,7 +17,7 @@ import {
   Heading,
   Text,
 } from "@components/ui";
-import { Workshop } from "@utils/db/client";
+import { Workshop } from "@utils";
 import { Paths } from "@utils/paths";
 
 interface WorkshopClientProps {
@@ -25,16 +25,16 @@ interface WorkshopClientProps {
 }
 
 export const WorkshopClient = ({ workshop }: WorkshopClientProps) => {
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("pl-PL", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  };
+  // const formatDate = (dateString: string) => {
+  //   return new Date(dateString).toLocaleDateString("pl-PL", {
+  //     weekday: "long",
+  //     year: "numeric",
+  //     month: "long",
+  //     day: "numeric",
+  //     hour: "2-digit",
+  //     minute: "2-digit",
+  //   });
+  // };
 
   return (
     <PageContainer>
@@ -50,7 +50,7 @@ export const WorkshopClient = ({ workshop }: WorkshopClientProps) => {
           </div>
           <div className="space-y-8 lg:col-span-4">
             <WorkshopPoster
-              imageUrl={workshop.image_url}
+              imageUrl={workshop.image.formats.small.url}
               name={workshop.name}
             />
             <div className="space-y-8 lg:col-span-4">
@@ -62,32 +62,6 @@ export const WorkshopClient = ({ workshop }: WorkshopClientProps) => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <Calendar className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                      <div className="min-w-0 flex-1">
-                        <p className="font-semibold text-gray-900">
-                          Data rozpoczęcia
-                        </p>
-                        <p className="break-words text-sm text-gray-600">
-                          {formatDate(workshop.start_date)}
-                        </p>
-                      </div>
-                    </div>
-
-                    {workshop.end_date && (
-                      <div className="flex items-start gap-3">
-                        <Calendar className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                        <div className="min-w-0 flex-1">
-                          <p className="font-semibold text-gray-900">
-                            Data zakończenia
-                          </p>
-                          <p className="break-words text-sm text-gray-600">
-                            {formatDate(workshop.end_date)}
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
                     <div className="flex items-start gap-3">
                       <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                       <div className="min-w-0 flex-1">

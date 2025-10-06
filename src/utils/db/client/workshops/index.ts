@@ -1,3 +1,0 @@
-export * from "./workshops.types";
-export * from "./queries";
-export * from "./mutations";

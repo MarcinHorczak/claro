@@ -20,6 +20,7 @@ export const useHomeSections = () => {
         titleKey: "home.l.title",
         descriptionKey: "home.l.description",
       },
+      polygonVariants: [PolygonVariant.TopLeft, PolygonVariant.BottomLeft],
     },
     {
       sectionIndex: 2,
@@ -39,6 +40,7 @@ export const useHomeSections = () => {
         titleKey: "home.r.title",
         descriptionKey: "home.r.description",
       },
+      polygonVariants: [PolygonVariant.TopRight, PolygonVariant.BottomRight],
     },
     {
       sectionIndex: 4,

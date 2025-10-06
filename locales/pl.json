@@ -24,6 +24,10 @@
       "workshops": {
         "title": "Warsztaty",
         "description": "Warsztaty rozwojowe CLARO: komunikacja, rozwiązywanie konfliktów, emocje, duchowość. Dla grup, małżeństw, młodzieży i duchownych. Stacjonarnie i online."
+      },
+      "meetings": {
+        "title": "Spotkania",
+        "description": "Spotkania tematyczne z CLARO: relacje, rozwój osobowy, duchowość. Stacjonarnie w Tychach/Katowicach."
       }
     }
   },
@@ -52,7 +56,7 @@
       "title": "Oferta",
       "coaching": "Coaching",
       "workshops": "Warsztaty",
-      "sessions": "Spotkania"
+      "meetings": "Spotkania"
     },
     "contact": "Kontakt"
   },
@@ -136,10 +140,17 @@
       "backToWorkshops": "Powrót do warsztatów",
       "poster": "Plakat wydarzenia"
     },
-    "sessions": {
+    "meetings": {
       "title": "Spotkania",
       "subtitle": "Stacjonarnie",
-      "description": "Spotkania tematyczne z CLARO: relacje, rozwój osobisty, duchowość."
+      "description": "Spotkania tematyczne z CLARO: relacje, rozwój osobowy, duchowość."
+    },
+    "meeting": {
+      "registration": "Zapisz się na spotkanie",
+      "information": "Informacje o spotkaniu",
+      "location": "Miejsce",
+      "date": "Data",
+      "time": "Godzina"
     }
   },
   "contact": {

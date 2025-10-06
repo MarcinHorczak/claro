@@ -2,8 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { DateRangeBadge } from "@components/custom";
-import { Workshop } from "@utils/db/client/workshops/workshops.types";
+import { Workshop } from "@utils";
 
 type CarouselProps = {
   workshops: Workshop[];
@@ -30,7 +29,7 @@ export const Carousel = ({
       style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
     >
       <div className="flex min-w-0 gap-6">
-        {workshops.map((workshop) => (
+        {workshops.map((workshop, index) => (
           <button
             key={workshop.id}
             onClick={() => onWorkshopClick(workshop.key)}
@@ -41,18 +40,19 @@ export const Carousel = ({
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src={workshop.image_url}
+                  src={workshop.image.formats.small.url}
                   alt={workshop.name}
                   sizes={`max-width: ${isDesktop ? 340 : 280}px`}
                   fill
+                  priority={index === 0}
                   className="object-cover saturate-50 transition-all duration-500 group-hover:scale-105 group-hover:saturate-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4">
-                  <DateRangeBadge
-                    startDate={workshop.start_date}
-                    endDate={workshop.end_date}
-                  />
+                  {/* <DateRangeBadge
+                    startDate={workshop.startDate}
+                    endDate={workshop.endDate}
+                  /> */}
                 </div>
               </div>
 
@@ -61,7 +61,7 @@ export const Carousel = ({
                   {workshop.name}
                 </h3>
                 <p className="mb-4 line-clamp-3 flex-1 text-sm leading-relaxed text-gray-600">
-                  {workshop.short_description}
+                  {workshop.shortDescription}
                 </p>
                 <div className="flex items-center justify-end">
                   <ArrowRight className="h-4 w-4 text-primary" />

@@ -9,7 +9,7 @@ import {
 } from "@components/custom";
 import { Heading } from "@components/ui";
 import { useBreakpoint } from "@utils";
-import { Workshop } from "@utils/db/client/workshops/workshops.types";
+import { Workshop } from "@utils";
 import { PolygonVariant } from "@utils/enums";
 import { useWorkshopsInfo } from "./page.utils";
 

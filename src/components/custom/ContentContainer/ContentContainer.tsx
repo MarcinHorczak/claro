@@ -7,6 +7,7 @@ interface ContentContainerProps {
   bgColor?: string;
   polygonHeight?: number;
   polygonVariants?: PolygonVariant[];
+  compact?: boolean;
 }
 
 export const ContentContainer = ({
@@ -14,6 +15,7 @@ export const ContentContainer = ({
   bgColor,
   polygonHeight,
   polygonVariants,
+  compact = false,
 }: ContentContainerProps) => {
   const isTopPolygon =
     polygonVariants?.includes(PolygonVariant.TopLeft) ||
@@ -23,7 +25,9 @@ export const ContentContainer = ({
     polygonVariants?.includes(PolygonVariant.BottomRight);
 
   return (
-    <div>
+    <div
+      className={`${isTopPolygon && compact ? "mt-[-64px]" : ""} ${isBottomPolygon && compact ? "mb-[-64px]" : ""}`}
+    >
       {isTopPolygon && (
         <PolygonClip
           polygonHeight={polygonHeight}
