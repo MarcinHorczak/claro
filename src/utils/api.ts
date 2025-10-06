@@ -4,7 +4,7 @@ export const getData = async <T>(
 ): Promise<T[]> => {
   const url = `${process.env.NEXT_PUBLIC_API_URL}/${endpointName}?${populate ?? ""}`;
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { next: { revalidate: 60 * 60 * 3 } });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
