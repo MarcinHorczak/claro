@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useBreakpoint } from "@utils";
 import { Paths } from "@utils/paths";
-import LogoIcon from "/public/logo.svg";
 
 export const Logo = () => {
   const t = useTranslations();
@@ -25,7 +24,7 @@ export const Logo = () => {
         <div
           className={`flex h-11 w-11 items-center justify-center rounded-full bg-primary transition-all duration-500 ease-in-out ${logoTransform}`}
         >
-          <Image src={LogoIcon} alt="Logo" priority className="w-5" />
+          <Image src="/logo.svg" alt="Logo" priority width={20} height={20} className="w-5" />
         </div>
 
         {isDesktop ? (

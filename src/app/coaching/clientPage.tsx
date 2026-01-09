@@ -8,8 +8,6 @@ import {
   PageContainer,
 } from "@components/custom";
 import { PolygonVariant } from "@utils/enums";
-import LifeCoachingImage from "/public/images/session-1.webp";
-import RelationshipCoachingImage from "/public/images/session-2.webp";
 
 export const CoachingClient = () => {
   const t = useTranslations();
@@ -20,13 +18,13 @@ export const CoachingClient = () => {
         title={t("offers.coaching.life.title")}
         subtitle={t("offers.coaching.life.subtitle")}
         descriptionKey="offers.coaching.life.description"
-        image={LifeCoachingImage}
+        image="/images/session-1.webp"
       />
       <CoachingSection
         title={t("offers.coaching.relationship.title")}
         subtitle={t("offers.coaching.relationship.subtitle")}
         descriptionKey="offers.coaching.relationship.description"
-        image={RelationshipCoachingImage}
+        image="/images/session-2.webp"
         reverse
         bgColor="bg-orange-100"
         polygonVariants={[PolygonVariant.TopLeft, PolygonVariant.BottomRight]}

@@ -2,7 +2,8 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { ContentContainer, PageContainer } from "@components/custom";
 import { Heading } from "@components/ui";
-import AboutImage from "/public/images/ula.webp";
+
+const AboutImage = { src: "/images/ula.webp" };
 
 export async function generateMetadata() {
   const t = await getTranslations();

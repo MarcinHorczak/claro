@@ -6,7 +6,8 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Toaster } from "sonner";
 import { Footer, Header, NoSSRWrapper } from "@components/custom";
 import "../globals.css";
-import UlaImage from "/public/images/ula.webp";
+
+const UlaImage = { src: "/images/ula.webp" };
 
 const BASE_URL = "https://clarorozwoj.pl";
 
@@ -31,6 +32,7 @@ export const generateMetadata = async () => {
   };
 
   return {
+    metadataBase: new URL(BASE_URL),
     title: { default: t("meta.title"), template: `%s | ${t("meta.title")}` },
     keywords: t("meta.keywords"),
     authors: [{ name: t("meta.author") }],

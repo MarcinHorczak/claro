@@ -28,12 +28,14 @@ export const useNavigationElements = (): NavigationElementProps[] => {
         {
           name: t("navigation.offers.meetings"),
           href: Paths.Meetings,
+          disabled: true,
         },
       ],
     },
     {
       name: t("navigation.contact"),
       href: Paths.Contact,
+      disabled: true,
     },
   ];
 };

@@ -27,17 +27,22 @@ export const NavigationElement = ({
           </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          {options.map((option, index) => (
-            <DropdownMenuItem
-              key={index}
-              asChild
-              className="text-primary focus:bg-primary focus:text-primary-foreground data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground"
-            >
-              <Link href={option.href} className="w-full hover:cursor-pointer">
-                {option.name}
-              </Link>
-            </DropdownMenuItem>
-          ))}
+          {options
+            .filter(({ disabled }) => !disabled)
+            .map((option, index) => (
+              <DropdownMenuItem
+                key={index}
+                asChild
+                className="text-primary focus:bg-primary focus:text-primary-foreground data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground"
+              >
+                <Link
+                  href={option.href}
+                  className="w-full hover:cursor-pointer"
+                >
+                  {option.name}
+                </Link>
+              </DropdownMenuItem>
+            ))}
         </DropdownMenuContent>
       </DropdownMenu>
     );

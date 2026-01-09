@@ -6,12 +6,12 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [
-      process.env.NEXT_PUBLIC_API_URL?.split("//")[1]?.split("/")[0],
-      process.env.NEXT_PUBLIC_API_URL?.split("//")[1]
-        ?.split("/")[0]
-        ?.replace("strapiapp.com", "media.strapiapp.com"),
-    ].filter(Boolean),
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "*.strapiapp.com",
+      },
+    ],
     formats: ["image/webp", "image/avif"],
   },
   poweredByHeader: false,
